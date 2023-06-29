@@ -10,7 +10,7 @@ type Post = {
 
 function SquareCard({post}:{post:Post}){
     return(
-        <div className="hover:cursor-pointer transition hover:-translate-y-1 hover:brightness-125 text-white flex flex-col bg-slate-700 p-6 rounded-lg">
+        <div className="hover:cursor-pointer transition hover:-translate-y-1 hover:brightness-125 hover:outline-2 hover:outline-dashed outline-amber-500 outline-offset-4  text-white flex flex-col bg-slate-700 p-6 rounded-lg">
             <div className="flex justify-between">
                 <h1 className="text-lg font-bold">
                     {post.title}

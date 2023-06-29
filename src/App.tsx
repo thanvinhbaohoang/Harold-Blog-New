@@ -7,10 +7,13 @@ export default function App() {
   return (
     <div className="bg-slate-800 h-[100vh]">
       <div className=" flex flex-col gap-10 items-center justify-center bg-slate-800">
-            <NavBar />
             
-            <div className="w-[40vw] flex flex-col gap-10 ">
+            <NavBar />
+
+            <div className="w-[80vw] md:w-[60vw] lg:w-[40vw] flex flex-col gap-10 text-white ">
               
+
+
               <div className="flex flex-col gap-4">
                 <h1 className="font-bold text-3xl text-white">
                   Most Recent
