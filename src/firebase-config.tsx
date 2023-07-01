@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs } from "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyC2ZzMcyDHQ5QOM3eyqA_6_12_xGUjgzQA",
@@ -18,11 +18,3 @@ const app = initializeApp(firebaseConfig);
 // Init Service
 export const db = getFirestore(app);
 
-// // Collection Ref
-// const colRef = collection(db, "blogs");
-
-// // Get Collection Data
-// getDocs(colRef)
-// .then ( (snapshot) => {
-//   console.log(snapshot.docs)
-// })

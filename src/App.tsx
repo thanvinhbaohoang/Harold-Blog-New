@@ -3,13 +3,9 @@ import PostCards from "./Components/PostCards"
 import SquareCards from "./Components/SquareCards"
 import Categories from "./Components/Categories"
 import Footer from "./Components/Footer"
-import { collection, getDocs } from "firebase/firestore"; 
 import { useState } from "react"
 
 export default function App() {
-  const [blogs, setBlogs] = useState([]);
-  // const blogsRef = collection(db, "blogs");
-
   return (
     <div className="bg-slate-800 h-[100vh]">
       <div className=" flex flex-col gap-10 items-center justify-center bg-slate-800">
