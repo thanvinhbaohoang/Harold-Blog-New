@@ -1,5 +1,6 @@
 import React from "react";
 
+
 type Post = {
     title: string;
     date: string;
