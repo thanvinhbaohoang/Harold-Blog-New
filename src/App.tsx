@@ -26,11 +26,11 @@ export default function App() {
                 <Route path="/no" element={<NotFound/> } /> 
               </Routes> 
 
+              <Footer/>
 
 
             </div>
 
-            <Footer/>
 
       </div>
     </div>
