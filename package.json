@@ -18,7 +18,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-firebase-hooks": "^5.1.1",
-    "react-multi-carousel": "^2.8.4"
+    "react-multi-carousel": "^2.8.4",
+    "react-router-dom": "^6.14.1",
+    "tw-elements": "^1.0.0-beta2"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
