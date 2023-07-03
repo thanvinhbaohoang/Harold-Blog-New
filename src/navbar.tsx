@@ -1,13 +1,16 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 export default function NavBar() {
     return (
         <nav className="bg-white border-gray-200 dark:bg-gray-900 w-full text-white">
             <div className="max-w-screen-xl flex flex-wrap  justify-between mx-auto py-4">
                 <a href="#" className="flex items-center">
-                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Harold's Blog</span>
+                    <Link to="/">
+                            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Harold's Blog</span>
+                    </Link>
                 </a>
-                
+
                 <div className='flex transition'>
                     
                     <button type="button" class="text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 mr-2 mb-2">

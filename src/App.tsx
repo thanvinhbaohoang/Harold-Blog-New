@@ -7,7 +7,7 @@ import { useState } from "react"
 import { Modal } from "./Components/Modal"
 import {BrowserRouter, Routes , Route } from "react-router-dom" 
 import NotFound from "./Pages/NotFound"
-
+import BlogPage from "./Pages/BlogPage"
 
 import Home from "./Pages/Home"
 export default function App() {
@@ -22,13 +22,16 @@ export default function App() {
               
               <Routes> 
                 <Route path="/" element={<Home/> } /> 
+                <Route path="/blog" element={<BlogPage/> } /> 
                 <Route path="/no" element={<NotFound/> } /> 
               </Routes> 
 
 
-              <Footer/>
 
             </div>
+
+            <Footer/>
+
       </div>
     </div>
     
