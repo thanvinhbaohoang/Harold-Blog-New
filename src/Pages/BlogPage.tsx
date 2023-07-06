@@ -40,10 +40,12 @@ export default function BlogPage() {
               </address>
           </header>
         
-             <article className="prose-invert prose-img:rounded-xl prose-a:text-teal-300 prose-a:font-bold mx-auto prose-lg max-w-none prose-p:text-gray-300 prose-headings:font-bold prose-slate ">
-                
-                <ReactMarkdown children={markdownContent}/>
+             <article className="prose-invert prose-img:rounded-xl 
+             prose-a:text-teal-400 prose-a:font-bold 
+             mx-auto prose-lg max-w-none prose-p:text-gray-300 
+             prose-headings:font-bold prose-slate ">
 
+                <ReactMarkdown children={markdownContent}/>
 
             </article>
         </div>

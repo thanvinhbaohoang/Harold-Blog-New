@@ -10,6 +10,7 @@ import NotFound from "./Pages/NotFound"
 import BlogPage from "./Pages/BlogPage"
 
 import Home from "./Pages/Home"
+import MarkdownEditor from "./Pages/MarkdownEditor"
 export default function App() {
 
   return (
@@ -22,6 +23,7 @@ export default function App() {
               
               <Routes> 
                 <Route path="/" element={<Home/> } /> 
+                <Route path="/editor" element={<MarkdownEditor/> } /> 
                 <Route path="/blog" element={<BlogPage/> } /> 
                 <Route path="/no" element={<NotFound/> } /> 
               </Routes> 
