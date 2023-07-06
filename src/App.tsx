@@ -18,9 +18,7 @@ export default function App() {
       <div className=" flex flex-col gap-10 items-center justify-center bg-slate-800">
             <NavBar />
             
-            <div className="w-[80vw]  lg:w-[40vw] flex flex-col gap-10 text-white ">
-            
-              
+            <div className="w-[80vw]  lg:w-[40vw] flex flex-col items-center gap-10 text-white ">
               <Routes> 
                 <Route path="/" element={<Home/> } /> 
                 <Route path="/editor" element={<MarkdownEditor/> } /> 
@@ -28,12 +26,14 @@ export default function App() {
                 <Route path="/no" element={<NotFound/> } /> 
               </Routes> 
 
-              <Footer/>
 
 
             </div>
 
+            <div className="w-[80vw]  mt-10 lg:w-[60vw] flex flex-col gap-10 text-white ">
+              <Footer/>
 
+            </div>
       </div>
     </div>
     
