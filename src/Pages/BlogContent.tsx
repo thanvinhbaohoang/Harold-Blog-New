@@ -1,7 +1,7 @@
 import React from "react";
 // import ReactMarkdown from 'react-markdown'
 import ReactMarkdown from 'react-markdown';
-
+import BlogContentScroll from "../Components/BlogContentScroll";
 
 const markdownContent = 
 `
@@ -100,16 +100,10 @@ quoniam violentior area ab auro? Quid iubet certans, dic in Ciconumque et manu
 *huc*!
 
 It finally work holy shit
-
-
 My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
-
-
-
-
 `
 
-export default function BlogPage() {
+export default function BlogContent() {
     return (
     <div className="w-full flex flex-col items-center  ">
 

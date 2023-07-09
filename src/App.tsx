@@ -7,7 +7,7 @@ import { useState } from "react"
 import { Modal } from "./Components/Modal"
 import {BrowserRouter, Routes , Route } from "react-router-dom" 
 import NotFound from "./Pages/NotFound"
-import BlogPage from "./Pages/BlogPage"
+import BlogPage from "./Pages/BlogContent"
 
 import Home from "./Pages/Home"
 import MarkdownEditor from "./Pages/MarkdownEditor"
