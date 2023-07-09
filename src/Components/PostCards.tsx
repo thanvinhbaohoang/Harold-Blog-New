@@ -12,6 +12,7 @@ function PostCard({post}:{post:Post}){
     return(
         <div className="justify-end hover:cursor-pointer hover:outline-2 hover:outline-dashed outline-amber-500 outline-offset-4   transition hover:-translate-y-1 hover:brightness-125 text-white flex flex-col bg-slate-700 py-10 px-6 rounded-lg">
             <div className="flex justify-between">
+                
                 <h1 className="text-lg font-bold">
                     {post.title}
                 </h1>
@@ -19,6 +20,7 @@ function PostCard({post}:{post:Post}){
                     {post.date}
                 </p>
             </div>
+            
             <p>
                 {post.author}
             </p>

@@ -1,7 +1,6 @@
 import React from "react";
 // import ReactMarkdown from 'react-markdown'
 import ReactMarkdown from 'react-markdown';
-import BlogContentScroll from "../Components/BlogContentScroll";
 
 const markdownContent = 
 `
@@ -105,7 +104,7 @@ My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
 
 export default function BlogContent() {
     return (
-    <div className="w-full flex flex-col items-center  ">
+    <div className="w-fullflex flex-col items-center  ">
 
             <div className="flex flex-col w-full items-center my-10">
                     <div className="flex gap-2 text-sm">
