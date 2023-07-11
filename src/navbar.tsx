@@ -11,10 +11,13 @@ export default function NavBar() {
                     </Link>
                 </a>
 
-                <div className='flex transition'>
+                <div className='flex transition active:scale-95'>
                     <a href="#" className="flex items-center">
                         <Link to="/editor">
-                            <span className="self-center rounded-lg border bg-slate-700 hover:text-amber-500 hover:border-amber-400 transition px-4 py-2 text-md my-4 whitespace-nowrap dark:text-white">
+                            <span className="self-center rounded-lg border bg-slate-700 
+                            hover:text-indigo-500 active:bg-purple-700 hover:border-indigo-400 transition 
+                            
+                            px-4 py-2 text-md my-4 whitespace-nowrap dark:text-white">
                                 Create +
                             </span>
                         </Link>

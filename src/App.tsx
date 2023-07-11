@@ -14,7 +14,9 @@ export default function App() {
 
   return (
     <div className="bg-slate-800 h-[100vh]">
-      <div className=" flex flex-col gap-10 items-center justify-center bg-slate-800">
+      <div className=" flex flex-col gap-10 items-center
+      body-font font-poppins
+      justify-center bg-slate-800">
             <NavBar />
             
             <div className="flex flex-col items-center gap-10 text-white ">
