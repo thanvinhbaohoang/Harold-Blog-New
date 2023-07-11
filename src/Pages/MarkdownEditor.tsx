@@ -26,41 +26,52 @@ export default function MarkdownEditor(){
 
     return(
         
-       <div className="w-[60vw] h-[70vh] mb-10">
-        <h1 className="font-bold text-3xl mb-6">
-            New Blog Post
-        </h1>
+       <div className="w-[50vw] p-4  flex flex-col gap-4 mb-10">
+            <div className='flex gap-4'>
+                
+            <button class="bg-blue-500 hover:bg-blue-700 bg-opacity-30 transition text-white font-bold py-2 px-4 rounded">
+                Edit
+            </button>
 
-
-            <div className="flex gap-2 h-full">
-                    <form className="flex flex-col w-[70%] gap-4">
-                            <input type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Tags" required/>
-
-                            <div className="grid grid-cols-2 gap-2">
-                                <input type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Author " required/>
-                                <input type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Title" required/>
-                            </div>
-
-                                <div className="rounded-lg h-full border  focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 border-gray-300">
-                                    <textarea id="text" class="p-2.5 w-full h-full rounded-lg text-sm dark:bg-gray-700 dark:text-gray-200 text-gray-900  "placeholder="Blog Content..."></textarea>
-                                </div>
-                    </form>
-
-                    <div class="h-full w-full p-4 overflow-y-scroll bg-slate-900 rounded-lg">
-                        <article className="prose-invert prose-img:rounded-xl 
-                                prose-a:text-teal-400 prose-a:font-bold 
-                                mx-auto prose-lg max-w-none prose-p:text-gray-300 
-                                prose-headings:font-bold prose-slate ">
-                            <ReactMarkdown children={markdownContent}/>
-
-                        </article>
-                    </div>
+            <button class="bg-blue-500 hover:bg-blue-700 bg-opacity-30 transition text-white font-bold py-2 px-4 rounded">
+                Preview
+            </button>
 
             </div>
 
-            <button class="bg-blue-500 w-full hover:bg-blue-700 mt-4 text-white font-bold py-2 px-4 rounded">
-                Publish Blog
-                </button>
+
+            <div className="flex h-full border-2 border-slate-600 rounded-xl p-4">
+                    <form className="flex flex-col h-full w-full gap-2">
+
+                            {/* Image Upload */}
+                            <div class="flex items-center justify-center w-full">
+                                <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                                    <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                        <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
+                                        </svg>
+                                        <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+                                        <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                                    </div>
+                                    <input id="dropzone-file" type="file" class="hidden" />
+                                </label>
+                            </div> 
+
+                            <input type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-3xl font-bold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="New Blog Title Here ..." required/>
+                            <input type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Add up to 3 tags ..." required/>
+
+
+                            {/* <div className="rounded-lg h-[60vh] border focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 border-gray-300"> */}
+                                <textarea id="text" class="rounded-lg h-[60vh] border focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 border-gray-300 p-2.5 w-full rounded-lg text-md dark:bg-gray-700 dark:text-gray-200 text-gray-700  "placeholder="Write Your Blog Content Here ..."></textarea>
+                            {/* </div> */}
+                    </form>
+            </div>
+
+            <button class="bg-blue-500 hover:bg-blue-700 bg-opacity-30 transition text-white font-bold py-2 px-4 rounded-lg">
+                        Publish
+            </button>
+
+           
        </div>
 
     )

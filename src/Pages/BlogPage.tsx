@@ -5,13 +5,11 @@ import BlogContentScroll from "../Components/BlogContentScroll"
 export default function BlogPage(){
 
     return(
-        <div className="flex">
-            <BlogContentScroll/>
-           
-           <div className="flex ">
+ 
+           <div className="flex w-1/2">
                 <BlogContent/>
                 
-                <div className="border-2 p-4 fixed mx-4 flex flex-col items-center rounded-lg
+                {/* <div className="border-2 p-4 fixed mx-4 flex flex-col items-center rounded-lg
                     right-10  w-[400px] text-center gap-6">
 
                         <div>
@@ -28,9 +26,8 @@ export default function BlogPage(){
                         </div>
 
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ad consequuntur ipsa sapiente ratione possimus labore ex, error quia nemo doloremque beatae necessitatibus itaque laboriosam commodi suscipit maiores nostrum cum!</p>
-                </div>
+                </div> */}
            </div>
              
-        </div>
     )
 }

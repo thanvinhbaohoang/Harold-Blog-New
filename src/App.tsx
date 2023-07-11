@@ -17,21 +17,17 @@ export default function App() {
       <div className=" flex flex-col gap-10 items-center justify-center bg-slate-800">
             <NavBar />
             
-            <div className="w-[80vw]  lg:w-[60vw] flex flex-col items-center gap-10 text-white ">
+            <div className="flex flex-col items-center gap-10 text-white ">
               <Routes> 
                 <Route path="/" element={<Home/> } /> 
                 <Route path="/editor" element={<MarkdownEditor/> } /> 
                 <Route path="/blog" element={<BlogPage/> } /> 
                 <Route path="/no" element={<NotFound/> } /> 
               </Routes> 
-
-
-
             </div>
 
             <div className="w-[80vw]  mt-10 lg:w-[60vw] flex flex-col gap-10 text-white ">
               <Footer/>
-
             </div>
       </div>
     </div>
