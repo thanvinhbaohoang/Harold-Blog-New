@@ -10,16 +10,38 @@ function SquareCard({post}:{post:Blog}){
                 <div className="flex gap-2 items-center mb-2 ">
                     <div className="w-[30px] h-[30px]  rounded-full bg-black"></div>
                    <div> {post.author}</div>
-                    <div>{post.date}</div>
+
+
+                    <span class="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">
+                        <svg class="w-2.5 h-2.5 mr-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm3.982 13.982a1 1 0 0 1-1.414 0l-3.274-3.274A1.012 1.012 0 0 1 9 10V6a1 1 0 0 1 2 0v3.586l2.982 2.982a1 1 0 0 1 0 1.414Z"/>
+                        </svg>
+                        {post.date}
+                    </span>
+                    
+                    <div className="flex gap-2 text-sm ">
+                       
+                        <span class="bg-gray-100 text-gray-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-amber-600 dark:text-gray-300">
+                            Blockchain
+                        </span>
+                        <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-yellow-300 border border-yellow-300">
+                            Libertarian
+                        </span>
+                    </div>
                 </div>
+
             <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
                     <img class="rounded-t-lg" src="https://www.seiu1000.org/sites/main/files/imagecache/hero/main-images/camera_lense_0.jpeg" alt="" />
                 </a>
+
                 <div class="p-5">
                     <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{post.title}</h5>
+                        <h5 class=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{post.title}</h5>
                     </a>
+                   
+
+
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
                         {post.content}    
                     </p>
@@ -36,6 +58,7 @@ function SquareCard({post}:{post:Blog}){
                         </a>
                     </div>
                 </div>
+
             </div>
             </div>
        </Link>
