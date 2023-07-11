@@ -1,5 +1,5 @@
 import BlogContent from "./BlogContent"
-import BlogContentScroll from "../Components/BlogContentScroll"
+import BlogContentScroll from "../BlogContentScroll"
 
 
 export default function BlogPage(){

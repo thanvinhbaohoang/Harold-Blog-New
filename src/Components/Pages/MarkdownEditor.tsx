@@ -29,11 +29,11 @@ export default function MarkdownEditor(){
        <div className="w-[50vw] p-4  flex flex-col gap-4 mb-10">
             <div className='flex gap-4'>
                 
-            <button class="bg-blue-500 hover:bg-blue-700 bg-opacity-30 transition text-white font-bold py-2 px-4 rounded">
+            <button class="bg-purple-500 hover:bg-purple-700 bg-opacity-30 transition text-white font-bold py-2 px-4 rounded">
                 Edit
             </button>
 
-            <button class="bg-blue-500 hover:bg-blue-700 bg-opacity-30 transition text-white font-bold py-2 px-4 rounded">
+            <button class="bg-purple-500 hover:bg-purple-700 bg-opacity-30 transition text-white font-bold py-2 px-4 rounded">
                 Preview
             </button>
 
@@ -57,17 +57,17 @@ export default function MarkdownEditor(){
                                 </label>
                             </div> 
 
-                            <input type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-3xl font-bold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="New Blog Title Here ..." required/>
-                            <input type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Add up to 3 tags ..." required/>
+                            <input type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-3xl font-bold rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500" placeholder="New Blog Title Here ..." required/>
+                            <input type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500" placeholder="Add up to 3 tags ..." required/>
 
 
-                            {/* <div className="rounded-lg h-[60vh] border focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 border-gray-300"> */}
-                                <textarea id="text" class="rounded-lg h-[60vh] border focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 border-gray-300 p-2.5 w-full rounded-lg text-md dark:bg-gray-700 dark:text-gray-200 text-gray-700  "placeholder="Write Your Blog Content Here ..."></textarea>
+                            {/* <div className="rounded-lg h-[60vh] border focus:ring-purple-500 focus:border-purple-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500 border-gray-300"> */}
+                                <textarea id="text" class="rounded-lg h-[60vh] border focus:ring-purple-500 focus:border-purple-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500 border-gray-300 p-2.5 w-full rounded-lg text-md dark:bg-gray-700 dark:text-gray-200 text-gray-700  "placeholder="Write Your Blog Content Here ..."></textarea>
                             {/* </div> */}
                     </form>
             </div>
 
-            <button class="bg-blue-500 hover:bg-blue-700 bg-opacity-30 transition text-white font-bold py-2 px-4 rounded-lg">
+            <button class="bg-purple-500 hover:bg-purple-700 bg-opacity-30 transition text-white font-bold py-2 px-4 rounded-lg">
                         Publish
             </button>
 

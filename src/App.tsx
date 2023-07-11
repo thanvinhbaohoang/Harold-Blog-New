@@ -6,10 +6,10 @@ import Footer from "./Components/Footer"
 import { useState } from "react"
 import { Modal } from "./Components/Modal"
 import {BrowserRouter, Routes , Route } from "react-router-dom" 
-import NotFound from "./Pages/NotFound"
-import Home from "./Pages/Home"
-import BlogPage, { BlockPage } from "./Pages/BlogPage"
-import MarkdownEditor from "./Pages/MarkdownEditor"
+import NotFound from "./Components/Pages/NotFound"
+import Home from "./Components/Pages/Home"
+import BlogPage, { BlockPage } from "./Components/Pages/BlogPage"
+import MarkdownEditor from "./Components/Pages/MarkdownEditor"
 export default function App() {
 
   return (
