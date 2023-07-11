@@ -6,23 +6,38 @@ function SquareCard({post}:{post:Blog}){
 
     return(
        <Link to = "/blog">
-         <div className="hover:cursor-pointer h-[15vh]  transition hover:-translate-y-1 hover:brightness-125 hover:outline-2 hover:outline-dashed outline-amber-500 outline-offset-4  text-white flex flex-col bg-slate-700 p-6 rounded-lg">
-            <div className="flex justify-between">
-                <h1 className="text-lg font-bold">
-                    {post.title}
-                </h1>
-                <p className="brightness-75">
-                    {post.date}
-                </p>
-            </div>
-            <p>
-                {post.author}
-            </p>
+            <div className="w-full">
+                <div className="flex gap-2 items-center mb-2 ">
+                    <div className="w-[30px] h-[30px]  rounded-full bg-black"></div>
+                   <div> {post.author}</div>
+                    <div>{post.date}</div>
+                </div>
+            <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="rounded-t-lg" src="https://www.seiu1000.org/sites/main/files/imagecache/hero/main-images/camera_lense_0.jpeg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{post.title}</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                        {post.content}    
+                    </p>
 
-            <p className="brightness-75 truncate">
-                {post.content}
-            </p>
-        </div>
+                    <div className="flex gap-2">
+                        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            1250 Sats
+                            
+                        </a>
+
+                        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            31 Comments
+                           
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
        </Link>
     )
 }
@@ -68,7 +83,7 @@ export default function SquareCards(){
   
     const renderCards = () => {
         return (
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 gap-24">
            {blogs.map((blog) => <SquareCard post={blog} />)}
         </div>
         )
