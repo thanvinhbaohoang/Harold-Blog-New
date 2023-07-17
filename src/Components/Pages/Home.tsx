@@ -12,12 +12,12 @@ export default function Home() {
     return(
         <div className="flex w-[50vw] flex-col items-center gap-4 ">
           
-           <div className="flex w-full  items-center justify-between h-[60vh]  mb-10">
-                <div className="flex-col gap-2 text-lg justify-center w-1/2 h-full  flex">
-                    <h1 className="font-bold text-5xl"> Hey, I am <span className="hover-underline">Harold!</span></h1>
-                    <a className="text-2xl opacity-60 hover:underline underline-offset-4 hover:text-indigo-400 transition">Full-stack Developer. </a>
-                    <p className="text-xl opacity-80"> I am a musician with burning passion for decentralized technology and agorism.
-                    Currently working on Bitcoin and Ethereum projects to further cryptocurrency adoption :)</p>
+           <div className="flex w-full  items-center justify-between  mb-10">
+                <div className="flex-col gap-2 text-lg my-32 justify-center  h-full  flex">
+                    <h1 className="font-bold text-5xl"> Hey, I am <span className="hover-underline">Harold Than!</span></h1>
+                    <a className="text-3xl opacity-60 hover:underline underline-offset-4 hover:text-indigo-400 transition">Full-stack Developer  </a>
+                    <p className="text-2xl opacity-80"> I am a musician with <em className="text-amber-400">burning passion</em> 🔥 for decentralized technology and agorism.
+                    Currently working on Bitcoin and Ethereum projects to further cryptocurrency adoption <span className="">😎</span></p>
                 </div>
 
                         

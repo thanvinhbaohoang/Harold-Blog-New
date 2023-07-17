@@ -14,12 +14,12 @@ export default function App() {
 
   return (
     <div className="bg-slate-800 h-[100vh]">
-      <div className=" flex flex-col gap-10 items-center
+      <div className=" flex flex-col gap-4 items-center
       body-font font-poppins text-lg
       justify-center bg-slate-800">
             <NavBar />
             
-            <div className="flex flex-col items-center gap-10 text-white ">
+            <div className="flex flex-col items-center  text-white ">
               <Routes> 
                 <Route path="/" element={<Home/> } /> 
                 <Route path="/editor" element={<MarkdownEditor/> } /> 
@@ -28,7 +28,7 @@ export default function App() {
               </Routes> 
             </div>
 
-            <div className="w-[80vw]  mt-10 lg:w-[60vw] flex flex-col gap-10 text-white ">
+            <div className="w-[80vw]  mt-10 lg:w-[60vw] flex flex-col  text-white ">
               <Footer/>
             </div>
       </div>
