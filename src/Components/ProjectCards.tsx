@@ -1,4 +1,5 @@
 import React from "react";
+import { FiExternalLink } from 'react-icons/fi';
 
 type Project = {
     title: string;
@@ -12,8 +13,9 @@ function ProjectCard({Project}:{Project:Project}){
     return(
         
         <div>
-            <a href="#" class="flex flex-col items-center p-6
-                        bg-white border transition border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <a href="#" class="flex flex-col items-center p-6 bg-gray-800
+                        border transition border-gray-700 rounded-lg 
+                        shadow md:flex-row md:max-w-xl bg-slate-800">
                 <div class="flex flex-col justify-between p-4 leading-normal">
                     <p className="text-xl text-amber-400"> {Project.date}</p>
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -25,12 +27,12 @@ function ProjectCard({Project}:{Project:Project}){
                     
                     
                     <div className="flex gap-4">
-                        <button className="rounded-md border py-1 px-4">
-                            Article
+                        <button className="grey-button flex items-center gap-2 ">
+                            Demo <FiExternalLink size={16}/>
                         </button>
 
-                        <button className="rounded-md border py-1 px-4">
-                            Demo
+                        <button className="grey-button flex items-center gap-2 bg-pink-500">
+                            Source <FiExternalLink size={16}/>
                         </button>
                     </div>
                 
