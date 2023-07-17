@@ -25,4 +25,8 @@
     hover:outline hover:scale-105 hover:opacity-100
     cursor-pointer font-semibold transition
   }
+
+  .hover-underline {
+    @apply hover:underline underline-offset-4 hover:text-indigo-400 cursor-pointer
+  }
 }
