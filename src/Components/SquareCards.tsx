@@ -16,16 +16,15 @@ function SquareCard({post}:{post:Blog}){
                 active:translate-y-1 active:shadow-sm 
                 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img class="rounded-t-lg " src="https://www.seiu1000.org/sites/main/files/imagecache/hero/main-images/camera_lense_0.jpeg" alt="" />
+                        <img class="rounded-t-lg" src="https://www.seiu1000.org/sites/main/files/imagecache/hero/main-images/camera_lense_0.jpeg" alt="" />
                     </a>
   
-
                     <div class="p-5">
-                        <a href="#">
-                            <h5 class=" text-3xl my-2 font-bold tracking-tight text-gray-900 dark:text-white">{post.title}</h5>
-                        </a>
-                        <p className="h-48 opacity-50 text-xl overflow-hidden my-4">{post.content}</p>
+                    <div className="h-36 overflow-hidden mb-10">
+                    <h5 class=" text-3xl my-2 font-bold tracking-tight text-gray-900 dark:text-white">{post.title}</h5>
+                        <p className="opacity-50 text-xl overflow-hidden my-4">{post.content}</p>
 
+                    </div>
                         <div className="flex gap-2 items-center justify-between mb-2 ">
 
                             <div className="flex items-center gap-2">
