@@ -11,8 +11,8 @@ function SquareCard({post}:{post:Blog}){
             <div className="w-full ">
                 
 
-                <div class=" bg-white border hover:scale-[101%] 
-                hover:outline hover:outline-2 outline-offset-2 outline-indigo-300 transition ease-in-out
+                <div class=" bg-white border hover:scale-[103%]  
+                hover:outline hover:outline-2 outline-offset-2 outline-amber-300 transition 
                 active:translate-y-1 active:shadow-sm 
                 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">

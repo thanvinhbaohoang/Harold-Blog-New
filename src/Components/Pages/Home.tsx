@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SquareCards from "../SquareCards";
 import Categories from "../Categories";
-import PostCards from "../PostCards";
+import PostCards from "../ProjectCards";
 import { FaInstagram, FaGithub, FaLinkedinIn} from 'react-icons/fa';
 import {BsPersonFill, BsLightningFill} from 'react-icons/bs'
 import SearchByTags from "../SearchByTags";
@@ -10,13 +10,13 @@ import SearchByTags from "../SearchByTags";
 export default function Home() {
     
     return(
-        <div className="flex w-[50vw] flex-col items-center gap-4 ">
+        <div className="flex w-[50vw] flex-col items-center gap-24 ">
           
-           <div className="flex w-full  items-center justify-between  mb-10">
-                <div className="flex-col gap-2 text-lg my-32 justify-center  h-full  flex">
+           <section className="flex w-full  items-center justify-between  mb-10">
+                <div className="flex-col gap-2 text-lg my-24 justify-center  h-full  flex">
                     <h1 className="font-bold text-5xl"> Hey, I am <span className="hover-underline">Harold Than!</span></h1>
                     <a className="text-3xl opacity-60 hover:underline underline-offset-4 hover:text-indigo-400 transition">Full-stack Developer  </a>
-                    <p className="text-2xl opacity-80"> I am a musician with <em className="text-amber-400">burning passion</em> 🔥 for decentralized technology and agorism.
+                    <p className="text-2xl opacity-80"> I am a musician with <em className="text-amber-400">burning passion</em> 🔥 for <span className="text-amber-300 hover-underline">open-source projects</span> and agorism.
                     Currently working on Bitcoin and Ethereum projects to further cryptocurrency adoption <span className="">😎</span></p>
                 </div>
 
@@ -61,17 +61,25 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-
-           </div>
-
+           </section>
 
 
-            <div className="flex flex-col w-full gap-4">
-                <SearchByTags/>
-                <div className="w-full">
-                    <SquareCards/>     
+            <section>
+                <div className="flex items-center  mb-10 justify-between">
+                    <h1 className="font-bold text-4xl">Projects</h1>
+                    <button className="grey-button">
+                        View all
+                    </button>
                 </div>
-            </div>
+                <PostCards/>
+            </section>
+
+
+
+            <section className="w-full">
+                <SearchByTags/>
+                <SquareCards/>     
+            </section>
       </div>
 
     )

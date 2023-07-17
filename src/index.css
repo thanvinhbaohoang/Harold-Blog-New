@@ -27,6 +27,14 @@
   }
 
   .hover-underline {
-    @apply hover:underline underline-offset-4 hover:text-indigo-400 cursor-pointer
+    @apply hover:underline underline-offset-4 hover:text-amber-400 cursor-pointer
+  }
+
+  .grey-button {
+    @apply bg-gray-700 px-4 py-2 rounded-md 
+    hover:outline hover:scale-[102%]
+    opacity-80 hover:opacity-100
+    active:scale-95
+    outline-offset-2 outline-amber-400 transition
   }
 }

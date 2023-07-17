@@ -17,10 +17,14 @@ export default function SearchByTags(){
         )
     }
     return (
-    <div className="">
-        <h1 className="text-2xl font-bold"> Search blog by topics</h1>
-
-        <ul className="flex gap-2 text-sm my-4">
+    <div className="flex flex-col gap-2 my-4">
+        <div className="flex items-center justify-between">
+        <h1 className="text-4xl my-6 font-bold"> Blogs</h1>
+        <button className="grey-button">
+            View all
+        </button>
+        </div>
+        <ul className="flex gap-2 text-sm">
             <li className="tag-bubble"> Blockchain</li>
             <li className="tag-bubble"> Mycology</li>
             <li className="tag-bubble"> Brewing</li>

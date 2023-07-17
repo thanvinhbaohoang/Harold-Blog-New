@@ -1,6 +1,8 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FiExternalLink } from 'react-icons/fi';
+
 export default function NavBar() {
     return (
         <nav className="mt-6 w-1/2 text-white">
@@ -12,10 +14,11 @@ export default function NavBar() {
                 </a>
 
                 <ul className='flex text-xl  font-md gap-4 mt-4'>
-                    <li className='opacity-60 hover:opacity-100 transition cursor-pointer'> Blog </li>
-                    <li className='opacity-60 hover:opacity-100 transition cursor-pointer'> Portfolio </li>
-                    <li className='opacity-60 hover:opacity-100 transition cursor-pointer'> Projects </li>
-                    <li className='opacity-60 hover:opacity-100 transition cursor-pointer'> Contact </li>
+                    <li className='opacity-60 hover:opacity-100 transition cursor-pointer hover-underline'> About </li>  
+                    <li className='opacity-60 hover:opacity-100 transition cursor-pointer hover-underline'> Projects </li>
+                    <li className='opacity-60 hover:opacity-100 transition cursor-pointer hover-underline'> Blogs </li>
+                    <li className='opacity-60 hover:opacity-100 transition cursor-pointer hover-underline'> Contact </li>
+                    <li className='opacity-60 hover:opacity-100 transition cursor-pointer hover-underline flex items-center gap-2'> Github <FiExternalLink size={16}/></li>
 
                 </ul>
 

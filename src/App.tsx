@@ -1,5 +1,5 @@
 import NavBar from "./navbar"
-import PostCards from "./Components/PostCards"
+import PostCards from "./Components/ProjectCards"
 import SquareCards from "./Components/SquareCards"
 import Categories from "./Components/Categories"
 import Footer from "./Components/Footer"
