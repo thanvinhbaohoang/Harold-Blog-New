@@ -2,44 +2,75 @@ import React, { useState } from "react";
 import SquareCards from "../SquareCards";
 import Categories from "../Categories";
 import PostCards from "../PostCards";
+import { FaInstagram, FaGithub, FaLinkedinIn} from 'react-icons/fa';
+import {BsPersonFill, BsLightningFill} from 'react-icons/bs'
+import SearchByTags from "../SearchByTags";
+
+
 export default function Home() {
     
     return(
-        <div className="flex w-[60vw] flex-col  items-center gap-4 ">
-
-            
-           <div className="flex w-full gap-2 mb-10">
-                <div className=" bg-gradient-to-r from-purple-500 from-10% via-sky-500 via-30% to-purple-500 to-90% rounded-lg w-full h-[20vh]">
+        <div className="flex w-[50vw] flex-col items-center gap-4 ">
+          
+           <div className="flex w-full  items-center justify-between h-[60vh]  mb-10">
+                <div className="flex-col gap-4 text-lg justify-center w-1/2 h-full  flex">
+                    <h1 className="font-bold text-5xl"> Hey, I am Harold!</h1>
+                    <p className="text-2xl opacity-60 hover:underline underline-offset-4 hover:text-indigo-400 transition"> Welcome to my Blog. </p>
+                    <p className="text-xl opacity-80"> I am a musician with burning passion for decentralized technology and agorism.
+                    Currently working on Bitcoin and Ethereum projects to further cryptocurrency adoption :)</p>
                 </div>
+
+                        
+                <div class="w-full max-w-sm hover:scale-[102%] transition hover:outline-dashed   bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex justify-end px-4 pt-4">
+                        <button id="dropdownButton" data-dropdown-toggle="dropdown" class="active:scale-105 inline-block border border-gray-600 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5" type="button">
+                            <span class="sr-only">Open dropdown</span>
+                            <div className="transition">
+                                <BsLightningFill/>
+                            </div>
+                        </button>
+                        <div id="dropdown" class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2" aria-labelledby="dropdownButton">
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Export Data</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete</a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center pb-10">
+                        <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-6/298841264_802905871121966_6082265023474547667_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=UVO_5nODTeUAX-Cyy6v&_nc_ht=scontent-bos5-1.xx&oh=00_AfA-P850rXQ73o-qf-c1dcxfUw2ehRoKWmCJtZtpItDzig&oe=64BAA7B9" alt="Harold image"/>
+                        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Harold Than</h5>
+                        <span class="text-sm text-gray-500 dark:text-gray-400">Full-Stack Developer</span>
+                        <div class="flex items-center mt-4 space-x-3 text-sm  md:mt-6">
+                            <a href="#" class="border rounded-full p-2 
+                            opacity-50 hover:opacity-100 hover:scale-105 transition">
+                                <BsPersonFill/>
+                            </a>
+                              <a href="#" class="border rounded-full p-2 
+                            opacity-50 hover:opacity-100 hover:scale-105 transition"><FaLinkedinIn/></a>
+                              <a href="#" class="border rounded-full p-2 
+                            opacity-50 hover:opacity-100 hover:scale-105 transition"><FaGithub/></a>
+                              <a href="#" class="border rounded-full p-2 
+                            opacity-50 hover:opacity-100 hover:scale-105 transition"><FaInstagram/></a>
+                        </div>
+                    </div>
+                </div>
+
            </div>
 
-            <div className="flex w-full  gap-4">
 
-                <div className="  w-[25%] flex flex-col  border-purple-500  rounded-md gap-2 left-10">
-                    <form>
-                        <div class="flex rounded-sm">
-                            <div class="relative w-full">
-                                <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg  focus:ring-purple-500 focus:border-purple-500 dark:bg-gray-700 dark:border-l-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-purple-500" placeholder="Search ..." required>
-                            </input>
 
-                                <button type="submit" class="absolute top-0 right-0 p-2.5 text-sm font-medium h-full text-white bg-purple-700   hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">
-                                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                                    </svg>
-                                    <span class="sr-only">Search</span>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                    <Categories/>
-                </div>
-
+            <div className="flex flex-col w-full gap-4">
+                <SearchByTags/>
                 <div className="w-full">
                     <SquareCards/>     
                 </div>
-
-             
-                
             </div>
       </div>
 

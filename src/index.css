@@ -14,3 +14,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+
+  .tag-bubble {
+    @apply rounded-full px-6 py-3 bg-gray-700 
+    flex items-center opacity-70
+    hover:outline hover:scale-105 hover:opacity-100
+    cursor-pointer font-semibold transition
+  }
+}

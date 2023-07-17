@@ -7,7 +7,7 @@ export default function NavBar() {
             <div className="max-w-screen-xl flex flex-wrap  justify-between mx-auto py-4">
                 <a href="#" className="flex items-center">
                     <Link to="/">
-                            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Satoshi Society</span>
+                            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Harold Than</span>
                     </Link>
                 </a>
 

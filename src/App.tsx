@@ -15,7 +15,7 @@ export default function App() {
   return (
     <div className="bg-slate-800 h-[100vh]">
       <div className=" flex flex-col gap-10 items-center
-      body-font font-poppins
+      body-font font-poppins text-lg
       justify-center bg-slate-800">
             <NavBar />
             

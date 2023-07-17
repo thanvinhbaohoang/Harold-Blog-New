@@ -104,23 +104,15 @@ My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
 
 export default function BlogContent() {
     return (
-    <div className="w-fullflex flex-col items-center  ">
+    <div className="w-full flex-col items-center  ">
 
-            <div className="flex flex-col w-full items-center my-10">
-                    <div className="flex gap-2 text-sm">
-                        <div className="border-gray-300 border-2 flex flex-col items-center px-4 py-2 rounded-3xl">
-                            Blockchain
-                        </div>
-                        
-                    </div>
-
-                    <h1 className="text-center text-4xl my-6 font-semibold">
-                        Harold's Guide To Being A Cool As Fuck Person
-                    </h1>
-                    <p className="opacity-80 text-center">
-                        How To Live As You Should And Be The Basest Version Of Yourself
-                    </p>
-            </div>
+           <div className="flex gap-2 items-center">
+             <div className="w-12 h-12 rounded-full border-2"></div>
+                <div className="flex flex-col">
+                    <h3 className="font-md text-xl">Harold Than</h3>
+                    <p className="opacity-80"> Published 21-12-6969</p>
+                </div>
+           </div>
 
 
 
