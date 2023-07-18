@@ -1,28 +1,29 @@
 import React, { useState } from "react";
-import { db } from "../firebase-config";
+import { db } from "../../../firebase-config";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { BsLightning } from "react-icons/bs";
 
-function SquareCard({post}:{post:Blog}){
+function BlogCard({post}:{post:Blog}){
 
     return(
        <Link to = "/blog">
-            <div className="w-full ">
+            <div className="w-full hover:saturate-100 transition ">
                 
 
                 <div class=" bg-white border hover:scale-[103%]  
                 hover:outline hover:outline-2 outline-offset-2 outline-amber-300 transition 
-                active:translate-y-1 active:shadow-sm 
-                border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="https://www.seiu1000.org/sites/main/files/imagecache/hero/main-images/camera_lense_0.jpeg" alt="" />
-                    </a>
+                active:translate-y-1 active:shadow-sm  
+                border-gray-200 rounded-lg flex items-center shadow dark:bg-gray-800 dark:border-gray-700">
+                    
+                    <img class="object-cover w-48 h-56  rounded-l-lg " src="https://www.seiu1000.org/sites/main/files/imagecache/hero/main-images/camera_lense_0.jpeg" alt="" />
   
                     <div class="p-5">
-                    <div className="h-36 overflow-hidden mb-10">
-                    <h5 class=" text-3xl my-2 font-bold tracking-tight text-gray-900 dark:text-white">{post.title}</h5>
-                        <p className="opacity-50 text-xl overflow-hidden my-4">{post.content}</p>
+                   
+
+                    <div className="h-28 overflow-hidden mb-10">
+                    <h5 class=" text-2xl my-2 font-bold tracking-tight  text-gray-900 dark:text-white">{post.title}</h5>
+                        <p className="opacity-50 text-md overflow-hidden my-4">{post.content}</p>
 
                     </div>
                         <div className="flex gap-2 items-center justify-between mb-2 ">
@@ -66,7 +67,7 @@ interface Blog {
     author: string;
 }
 
-export default function SquareCards(){
+export default function BlogCards(){
     const [loading, setLoading] = useState(false);
     const [blogs, setBlogs] = useState<Blog[]>([]);
 
@@ -95,8 +96,8 @@ export default function SquareCards(){
   
     const renderCards = () => {
         return (
-            <div className="grid grid-cols-2 gap-6">
-           {blogs.map((blog) => <SquareCard post={blog} />)}
+            <div className="grid grid-cols-1 gap-6">
+           {blogs.map((blog) => <BlogCard post={blog} />)}
         </div>
         )
     }

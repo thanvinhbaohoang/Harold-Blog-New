@@ -15,10 +15,11 @@ function ProjectCard({Project}:{Project:Project}){
         <div>
             <a href="#" class="flex flex-col items-center p-6 bg-gray-800
                         border transition border-gray-700 rounded-lg 
+                        outline-white hover:outline-amber-400 hover:outline-double outline-4 outline-offset-2 
                         shadow md:flex-row md:max-w-xl bg-slate-800">
                 <div class="flex flex-col justify-between p-4 leading-normal">
                     <p className="text-xl text-amber-400"> {Project.date}</p>
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <h5 class="mb-2 text-2xl hover-underline transition font-bold tracking-tight text-gray-900 dark:text-white">
                         {Project.title}
                     </h5>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">

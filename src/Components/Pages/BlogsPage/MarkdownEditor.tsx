@@ -1,6 +1,6 @@
 
 import ReactMarkdown from 'react-markdown';
-import { db } from '../../firebase-config';
+import { db } from '../../../firebase-config';
 import { doc, collection, addDoc } from "firebase/firestore"; 
 import { useState } from 'react';
 import { SnackbarProvider, enqueueSnackbar } from 'notistack';

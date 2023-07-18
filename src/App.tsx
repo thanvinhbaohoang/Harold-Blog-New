@@ -1,15 +1,15 @@
 import NavBar from "./navbar"
-import PostCards from "./Components/ProjectCards"
-import SquareCards from "./Components/SquareCards"
+import PostCards from "./Components/Pages/HomePage/ProjectCards"
+import SquareCards from "./Components/Pages/HomePage/BlogCards"
 import Categories from "./Components/Categories"
 import Footer from "./Components/Footer"
 import { useState } from "react"
 import { Modal } from "./Components/Modal"
 import {BrowserRouter, Routes , Route } from "react-router-dom" 
 import NotFound from "./Components/Pages/NotFound"
-import Home from "./Components/Pages/Home"
-import BlogPage, { BlockPage } from "./Components/Pages/BlogPage"
-import MarkdownEditor from "./Components/Pages/MarkdownEditor"
+import Home from "./Components/Pages/HomePage/Home"
+import BlogPage, { BlockPage } from "./Components/Pages/BlogsPage/BlogPage"
+import MarkdownEditor from "./Components/Pages/BlogsPage/MarkdownEditor"
 export default function App() {
 
   return (
