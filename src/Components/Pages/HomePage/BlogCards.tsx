@@ -87,7 +87,7 @@ export default function BlogCards(prop: { fullCard: boolean }){
     const renderCards = () => {
         return (
             <div className="grid grid-cols-2  gap-4">
-           {blogs.map((blog) => <BlogCard post={blog} />)}
+           {blogs.slice(0,4).map((blog) => <BlogCard post={blog} />)}
         </div>
         )
     }

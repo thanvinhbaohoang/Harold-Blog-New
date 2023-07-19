@@ -13,7 +13,7 @@ export default function BlogsSection() {
                         </button>
                     </Link>
                 </div>
-                <BlogCards fullCard={false} />
+                <BlogCards fullCard={true} />
             </section>
     )
 }

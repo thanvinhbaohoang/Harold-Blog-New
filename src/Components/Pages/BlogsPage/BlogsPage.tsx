@@ -9,7 +9,7 @@ export default function BlogsPage() {
                 <div>
 
                 </div>
-                <BlogCards fullCard={true} />
+                <BlogCards fullCard={false} />
       </div>
 
     )
