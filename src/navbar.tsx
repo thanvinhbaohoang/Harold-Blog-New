@@ -3,6 +3,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiExternalLink } from 'react-icons/fi';
 
+
+
 export default function NavBar() {
     return (
         <nav className="mt-6 w-full text-white">
@@ -15,21 +17,40 @@ export default function NavBar() {
 
                 <ul className='flex text-xl  font-md gap-4 mt-4'>
                     <Link to="/about">
-                        <li className='opacity-60 hover:opacity-100 transition cursor-pointer hover-underline'> About </li> 
+                        <a class="group text-gray-400 hover:text-white transition-all " href="#">
+                            <span class="bg-left-bottom bg-gradient-to-r from-teal-300 to-teal-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                About
+                            </span>
+                        </a>
                     </Link>
 
                     <Link to="/projects">
-                    <li className='opacity-60 hover:opacity-100 transition cursor-pointer hover-underline'> Projects </li>
+                    <a class="group text-gray-400 hover:text-white transition-all " href="#">
+                            <span class="bg-left-bottom bg-gradient-to-r from-pink-400 to-pink-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                Projects
+                            </span>
+                        </a>                    
                     </Link>
 
                     <Link to="/blogs">
-                    <li className='opacity-60 hover:opacity-100 transition cursor-pointer hover-underline'> Blogs </li>
+                    <a class="group text-gray-400 hover:text-white transition-all " href="#">
+                            <span class="bg-left-bottom bg-gradient-to-r from-amber-400 to-amber-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                Blog
+                            </span>
+                    </a>                    
                     </Link>
 
-                    <li className='opacity-60 hover:opacity-100 transition cursor-pointer hover-underline'> Contact </li>
+                    <a class="group text-gray-400 hover:text-white transition-all " href="#">
+                            <span class="bg-left-bottom bg-gradient-to-r from-emerald-300 to-emerald-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                Contact
+                            </span>
+                        </a>  
                     
-                    <li className='opacity-60 hover:opacity-100 transition cursor-pointer hover-underline flex items-center gap-2'> Github <FiExternalLink size={16}/></li>
-
+                    <a class="group text-gray-400 hover:text-white transition-all" href="#">
+                            <span class="bg-left-bottom flex items-center gap-2 bg-gradient-to-r from-purple-400 to-teal-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                Github <FiExternalLink size={16}/>
+                            </span>
+                        </a>  
                 </ul>
 
                 {/* <div className='flex transition active:scale-95'>
