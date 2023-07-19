@@ -5,7 +5,7 @@ import { FiExternalLink } from 'react-icons/fi';
 
 export default function NavBar() {
     return (
-        <nav className="mt-6 w-1/2 text-white">
+        <nav className="mt-6 w-full text-white">
             <div className="max-w-screen-xl flex flex-col flex-wrap  justify-between mx-auto py-4">
                 <a href="#" className="flex items-center hover:translate-y-1 transition">
                     <Link to="/">

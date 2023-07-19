@@ -12,29 +12,32 @@ import AboutPage from "./Components/Pages/AboutPage/AboutPage"
 export default function App() {
 
   return (
-    <div className="bg-slate-800 h-[100vh]">
-      <div className=" flex flex-col gap-4 items-center
-      body-font font-poppins text-lg
+    <div className="  ">
+      <div className=" flex flex-col gap-10 items-center
+      body-font font-poppins text-lg 
       justify-center bg-slate-800">
-            <NavBar />
+          <div className="w-[60vw]">
+              <NavBar />
             
-            <div className="flex flex-col items-center  text-white ">
-              <Routes> 
-                <Route path="/" element={<Home/> } /> 
-                <Route path="/about" element={<AboutPage/> } /> 
-                <Route path="/projects" element={<ProjectsPage/> } /> 
-                <Route path="/blogs" element={<BlogsPage/> } /> 
+              <div className="flex flex-col items-center  text-white ">
+                <Routes> 
+                  <Route path="/" element={<Home/> } /> 
+                  <Route path="/about" element={<AboutPage/> } /> 
+                  <Route path="/projects" element={<ProjectsPage/> } /> 
+                  <Route path="/blogs" element={<BlogsPage/> } /> 
 
 
-                <Route path="/editor" element={<MarkdownEditor/> } /> 
-                <Route path="/blog" element={<BlogPage/> } /> 
-                <Route path="/no" element={<NotFound/> } /> 
-              </Routes> 
-            </div>
+                  <Route path="/editor" element={<MarkdownEditor/> } /> 
+                  <Route path="/blog" element={<BlogPage/> } /> 
+                  <Route path="/no" element={<NotFound/> } /> 
+                </Routes> 
+              </div>
 
-            <div className="w-[80vw]  mt-10 lg:w-[60vw] flex flex-col  text-white ">
-              <Footer/>
-            </div>
+              <div className="w-[80vw]  mt-10 lg:w-[60vw] flex flex-col  text-white ">
+                <Footer/>
+              </div>
+          </div>
+
       </div>
     </div>
     

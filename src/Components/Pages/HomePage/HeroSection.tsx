@@ -4,7 +4,7 @@ import {BsPersonFill, BsLightningFill} from 'react-icons/bs'
 
 export default function HeroSection() {
     return(
-        <section className="flex w-full gap-20  items-center justify-between">
+        <section className="flex w-full gap-20  items-center justify-between  mb-10z">
                 <div className="flex-col gap-2 my-24 justify-center  h-full  flex">
                     <h1 className="font-bold text-4xl"> Hey, I am <span className="hover-underline">Harold Than!</span></h1>
                     <a className="text-xl opacity-60 hover:underline underline-offset-4 hover:text-indigo-400 transition">Full-stack Developer  </a>

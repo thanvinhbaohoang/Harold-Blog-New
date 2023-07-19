@@ -5,9 +5,6 @@ import ReactMarkdown from 'react-markdown';
 const markdownContent = 
 `
 
-
-![alt text](https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80 "Title")
-
 # Bracchia iterum corporibus
 
 ## Illam est gramen Palatia lacesse qua externa
@@ -104,20 +101,9 @@ My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
 
 export default function BlogContent() {
     return (
-    <div className="w-full flex-col items-center  ">
-
-           <div className="flex gap-2 items-center">
-             <div className="w-12 h-12 rounded-full border-2"></div>
-                <div className="flex flex-col">
-                    <h3 className="font-md text-xl">Harold Than</h3>
-                    <p className="opacity-80"> Published 21-12-6969</p>
-                </div>
-           </div>
-
-
-
+    <div className=" flex-col items-center justify-between w-full  ">
              <article className="prose-invert prose-img:rounded-xl 
-             prose-a:text-teal-400 prose-a:font-bold 
+             prose-a:text-amber-400 prose-a:font-bold  w-full
              mx-auto prose-lg max-w-none prose-p:text-gray-300 
              prose-headings:font-bold prose-slate ">
                 <ReactMarkdown children={markdownContent}/>
