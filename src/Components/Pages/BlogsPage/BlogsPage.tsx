@@ -5,7 +5,11 @@ export default function BlogsPage() {
     return(
         <div className="flex flex-col w-full items-center ">
                 <SearchByTags/>
-                <BlogCards/>
+
+                <div>
+
+                </div>
+                <BlogCards fullCard={true} />
       </div>
 
     )
