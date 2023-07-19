@@ -8,13 +8,26 @@ function BlogCard({post}:{post:Blog}){
 
     return(
        <Link to = "/blog">
-            <div className="w-full hover:saturate-100 transition ">
-                
+                <div class="overflow-hidden h-[100%] bg-white border hover:scale-[102%]  
+                    hover:outline hover:outline-2 outline-offset-2 outline-amber-300 transition 
+                    active:translate-y-1 active:shadow-sm  
+                    border-gray-200 rounded-md flex flex-col items-center shadow dark:bg-gray-800 dark:border-gray-700">
 
-                <div class=" bg-white border hover:scale-[103%]  
+                            
+                    <img class="w-full" src="https://www.seiu1000.org/sites/main/files/imagecache/hero/main-images/camera_lense_0.jpeg" alt="Sunset in the mountains"></img>
+                    <div class="px-8 py-6 flex flex-col h-full justify-between w-full gap-2">
+                        <div class="font-bold text-2xl mb-2">{post.title}</div>
+                        <p class="text-gray-400 text-base"> {post.content}</p>
+                        <p className="text-lg ">        {post.date} </p> 
+                    </div>
+
+ 
+                </div>
+
+                {/* <div class=" bg-white border hover:scale-[103%]  
                 hover:outline hover:outline-2 outline-offset-2 outline-amber-300 transition 
                 active:translate-y-1 active:shadow-sm  
-                border-gray-200 rounded-lg flex items-center shadow dark:bg-gray-800 dark:border-gray-700">
+                border-gray-200 rounded-lg flex flex-col items-center shadow dark:bg-gray-800 dark:border-gray-700">
                     
                     <img class="object-cover w-48 h-56  rounded-l-lg " src="https://www.seiu1000.org/sites/main/files/imagecache/hero/main-images/camera_lense_0.jpeg" alt="" />
   
@@ -49,8 +62,7 @@ function BlogCard({post}:{post:Blog}){
                         
                     </div>
 
-                </div>
-            </div>
+                </div> */}
        </Link>
     )
 }
@@ -96,7 +108,7 @@ export default function BlogCards(){
   
     const renderCards = () => {
         return (
-            <div className="grid grid-cols-1 gap-6">
+            <div className="grid grid-cols-2  gap-4">
            {blogs.map((blog) => <BlogCard post={blog} />)}
         </div>
         )
@@ -149,7 +161,7 @@ export default function BlogCards(){
 
     return (
 
-        <div className="flex flex-col items-center justify-items-center">        
+        <div className="flex flex-col w-full items-center justify-items-center">        
           {loading? (
            renderLoadingSpinner()
           ) :(renderCards())} 

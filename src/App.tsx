@@ -12,11 +12,11 @@ import AboutPage from "./Components/Pages/AboutPage/AboutPage"
 export default function App() {
 
   return (
-    <div className="  ">
+    <div className="h-[100vh] bg-slate-800 ">
       <div className=" flex flex-col gap-10 items-center
-      body-font font-poppins text-lg 
+      body-font font-poppins text-lg
       justify-center bg-slate-800">
-          <div className="w-[60vw]">
+          <div className="w-[60vw] ">
               <NavBar />
             
               <div className="flex flex-col items-center  text-white ">

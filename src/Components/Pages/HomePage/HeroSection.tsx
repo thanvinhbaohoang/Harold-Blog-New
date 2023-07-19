@@ -4,13 +4,13 @@ import {BsPersonFill, BsLightningFill} from 'react-icons/bs'
 
 export default function HeroSection() {
     return(
-        <section className="flex w-full gap-20 m-28 items-center justify-between ">
+        <section className="flex w-full gap-20 mt-24 items-center justify-between ">
                 <div className='flex flex-col w-1/2 h-full gap-10 items-start justify-between'>
 
                     <div className="flex-col gap-2 justify-center  h-full  flex">
-                        <h1 className="font-bold text-4xl"> Hey, I am <span className="hover-underline">Harold Than!</span></h1>
-                        <a className="text-xl opacity-60 hover:underline underline-offset-4 hover:text-indigo-400 transition">Full-stack Developer  </a>
-                        <p className="text-lg opacity-80"> I am a musician with <em className="text-amber-400">burning passion</em> 🔥 
+                        <h1 className="font-bold text-5xl"> Hey, I'm <span className="hover-underline">Harold Than!</span></h1>
+                        <a className="text-2xl opacity-60 hover:underline underline-offset-4 hover:text-indigo-400 transition">Full-stack Developer  </a>
+                        <p className="text-xl opacity-80"> I am a musician with <em className="text-amber-400">burning passion</em> 🔥 
                         for <span className="text-amber-300 hover-underline">open-source projects</span> and agorism.
                         Currently working on Bitcoin and Ethereum projects to further cryptocurrency adoption <span className="">😎</span></p>
                     </div>

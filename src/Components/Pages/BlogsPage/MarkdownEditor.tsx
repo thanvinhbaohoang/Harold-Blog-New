@@ -12,9 +12,9 @@ export default function MarkdownEditor(){
     const addBlog = async () => {
         // Add a new document with a generated id.
         await addDoc(collection(db, "blogs"), {
-            author: "TESTING Tokyo",
-            date: "TESTING Date",
-            content:"Testing Lorem ipsum lol"
+            title: "How to Test Title for Editor of React",
+            date: "October 2069",
+            content:"This is a test description for the blog"
         }).then(docRef => {
             console.log("Document has been added successfully");
             
