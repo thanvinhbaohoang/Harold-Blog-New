@@ -14,10 +14,20 @@ export default function NavBar() {
                 </a>
 
                 <ul className='flex text-xl  font-md gap-4 mt-4'>
-                    <li className='opacity-60 hover:opacity-100 transition cursor-pointer hover-underline'> About </li>  
+                    <Link to="/about">
+                        <li className='opacity-60 hover:opacity-100 transition cursor-pointer hover-underline'> About </li> 
+                    </Link>
+
+                    <Link to="/projects">
                     <li className='opacity-60 hover:opacity-100 transition cursor-pointer hover-underline'> Projects </li>
+                    </Link>
+
+                    <Link to="/blogs">
                     <li className='opacity-60 hover:opacity-100 transition cursor-pointer hover-underline'> Blogs </li>
+                    </Link>
+
                     <li className='opacity-60 hover:opacity-100 transition cursor-pointer hover-underline'> Contact </li>
+                    
                     <li className='opacity-60 hover:opacity-100 transition cursor-pointer hover-underline flex items-center gap-2'> Github <FiExternalLink size={16}/></li>
 
                 </ul>
