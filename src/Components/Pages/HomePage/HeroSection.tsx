@@ -4,12 +4,21 @@ import {BsPersonFill, BsLightningFill} from 'react-icons/bs'
 
 export default function HeroSection() {
     return(
-        <section className="flex w-full gap-20  items-center justify-between  mb-10z">
-                <div className="flex-col gap-2 my-24 justify-center  h-full  flex">
-                    <h1 className="font-bold text-4xl"> Hey, I am <span className="hover-underline">Harold Than!</span></h1>
-                    <a className="text-xl opacity-60 hover:underline underline-offset-4 hover:text-indigo-400 transition">Full-stack Developer  </a>
-                    <p className="text-lg opacity-80"> I am a musician with <em className="text-amber-400">burning passion</em> 🔥 for <span className="text-amber-300 hover-underline">open-source projects</span> and agorism.
-                    Currently working on Bitcoin and Ethereum projects to further cryptocurrency adoption <span className="">😎</span></p>
+        <section className="flex w-full gap-20 m-28 items-center justify-between ">
+                <div className='flex flex-col w-1/2 h-full gap-10 items-start justify-between'>
+
+                    <div className="flex-col gap-2 justify-center  h-full  flex">
+                        <h1 className="font-bold text-4xl"> Hey, I am <span className="hover-underline">Harold Than!</span></h1>
+                        <a className="text-xl opacity-60 hover:underline underline-offset-4 hover:text-indigo-400 transition">Full-stack Developer  </a>
+                        <p className="text-lg opacity-80"> I am a musician with <em className="text-amber-400">burning passion</em> 🔥 
+                        for <span className="text-amber-300 hover-underline">open-source projects</span> and agorism.
+                        Currently working on Bitcoin and Ethereum projects to further cryptocurrency adoption <span className="">😎</span></p>
+                    </div>
+
+                    <button className='grey-button text-amber-300 border-2 border-amber-400 bg-zinc-800 outline-yellow-300'>
+                        Resume
+                    </button>
+
                 </div>
 
                         
@@ -21,19 +30,7 @@ export default function HeroSection() {
                                 <BsLightningFill/>
                             </div>
                         </button>
-                        <div id="dropdown" class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                            <ul class="py-2" aria-labelledby="dropdownButton">
-                            <li>
-                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit</a>
-                            </li>
-                            <li>
-                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Export Data</a>
-                            </li>
-                            <li>
-                                <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete</a>
-                            </li>
-                            </ul>
-                        </div>
+                     
                     </div>
 
                     <div class="flex flex-col group items-center pb-10">
