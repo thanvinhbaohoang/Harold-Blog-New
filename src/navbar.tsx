@@ -16,7 +16,7 @@ export default function NavBar() {
                 </a>
 
                 <ul className='flex text-xl  font-md gap-4 mt-4'>
-                    <Link to="/about">
+                    <Link to="/">
                         <a class="group text-gray-400 hover:text-white transition-all " href="#">
                             <span class="bg-left-bottom bg-gradient-to-r from-teal-300 to-teal-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                                 About
@@ -46,7 +46,7 @@ export default function NavBar() {
                             </span>
                         </a>  
                     
-                    <a class="group text-gray-400 hover:text-white transition-all" href="#">
+                    <a class="group text-gray-400 hover:text-white transition-all" href="https://github.com/thanvinhbaohoang"  rel="noopener noreferrer" target="_blank">
                             <span class="bg-left-bottom flex items-center gap-2 bg-gradient-to-r from-purple-400 to-teal-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                                 Github <FiExternalLink size={16}/>
                             </span>

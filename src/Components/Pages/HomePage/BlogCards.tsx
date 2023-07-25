@@ -3,46 +3,33 @@ import { db } from "../../../firebase-config";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { BsLightning } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 
-function BlogCard({post}:{post:Blog}){
-    return(
-       <Link to = "/blog">
-                <div class="overflow-hidden h-64 bg-white  hover:scale-[102%]  
-                    hover:outline hover:outline-2 outline-offset-2 outline-amber-300 transition 
-                    active:translate-y-1 active:shadow-sm hover:bg-slate-700 rounded-xl shadow-gray-900
-                    border-gray-200 flex  items-center shadow dark:bg-gray-800 dark:border-gray-700">
-
-                    <div className="w-1/3  rounded-xl h-full">
-                        <img class="w-full rounded-xl h-full object-cover" src="https://www.seiu1000.org/sites/main/files/imagecache/hero/main-images/camera_lense_0.jpeg" alt="Sunset in the mountains"></img>
-                    </div>
-
-                    <div class="px-8 py-6 flex flex-col h-full justify-between w-full gap-2">
-                        <div class="font-bold text-2xl mb-2">{post.title}</div>
-                        <p class="text-gray-400 text-base"> {post.content}</p>
-                        <p className="text-lg ">        {post.date} </p> 
-                    </div>
-
- 
-                </div>
-       </Link>
-    )
-}
 function BlogStrip({post}:{post:Blog}){
     return(
         <Link to = "/blog">
-        <div class="overflow-hidden group bg-white  hover:scale-[102%]  
-             transition p-2
+        <div class="overflow-hidden group  shadow-md hover:scale-[102%]  
+             transition hover:shadow-2xl hover:shadow-gray-900
             active:translate-y-1 active:shadow-sm  rounded-xl 
-            border-gray-200 flex  flex-col items-center  dark:bg-gray-800 ">
+            border-gray-200 flex  flex-col items-center   border-opacity-10">
 
-            <div className="h-[24em] ">
-                <img class="w-full transition group-hover:outline-double outline-offset-4 outline-amber-400 outline-4 rounded-lg h-full object-cover" src="https://www.seiu1000.org/sites/main/files/imagecache/hero/main-images/camera_lense_0.jpeg" alt="Sunset in the mountains"></img>
-            </div>
+                <img class="w-full h-[16em] transition  outline-offset-4 outline-amber-400 
+                outline-4 rounded-lg object-cover" src="https://www.seiu1000.org/sites/main/files/imagecache/hero/main-images/camera_lense_0.jpeg" alt="Sunset in the mountains"></img>
             
-            <div class="py-6 flex flex-col h-full justify-between w-full gap-2">
-                <p className="text-lg font-md text-gray-400">        {post.date} </p> 
+            <div class="py-6 px-4  rounded-lg flex flex-col h-full justify-between w-full gap-2">
+                <div className="flex gap-2">
+                    <p className="text-xl font-bold text-amber-300 font-base">        Blockchain </p> 
+                    <p className="text-lg font-md text-gray-300">   -    {post.date} </p> 
+                </div>
+
                 <div class="font-bold text-2xl mb-2">{post.title}</div>
-                {/* <p class="text-gray-400 text-base"> {post.content}</p> */}
+                <p class="text-gray-400 text-base"> {post.content}</p>
+                <div className=" text-teal-400 text-lg font-thin flex items-center gap-2">
+                    Read Post 
+                    <div className="group-hover:translate-x-2  transition">
+                        <BsArrowRight/>
+                    </div>
+                </div>
             </div>
 
 
@@ -89,13 +76,7 @@ export default function BlogCards(prop: { fullCard: boolean, cardsNum: number })
       fetchBlogs();
     }, []);
   
-    const renderCards = () => {
-        return (
-            <div className="grid grid-cols-1  gap-10">
-           {blogs.slice(0,prop.cardsNum).map((blog) => <BlogCard post={blog} />)}
-        </div>
-        )
-    }
+
     const renderStrips = () => {
         return (
             <div className="w-full grid grid-cols-3 gap-6  auto-cols-auto auto-rows-fr">

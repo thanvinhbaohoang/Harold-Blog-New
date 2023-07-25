@@ -34,7 +34,10 @@ export default function BlogPage(){
                         
                         <div className="border p-6 text-base flex flex-col border-gray-600 bg-gray-800 gap-4 rounded-lg">
                             <h1 className="text-lg font-bold">About Me</h1>
-                                <img className="w-24 h-24  rounded-lg" src="https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-6/298841264_802905871121966_6082265023474547667_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=UVO_5nODTeUAX-Cyy6v&_nc_ht=scontent-bos5-1.xx&oh=00_AfA-P850rXQ73o-qf-c1dcxfUw2ehRoKWmCJtZtpItDzig&oe=64BAA7B9" ></img>
+                            <img class=" w-1/2 h-1/2 mb-3 rounded-lg shadow-lg" 
+                        src="/src/assets/harold_linkedin_pic.jpeg"/>
+                      
+
                             <p>
                                 Hello and thanks for visiting! My name is Harold Than, and this is my website and digital garden. 🌱
                                

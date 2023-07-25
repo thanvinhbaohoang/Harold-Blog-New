@@ -4,7 +4,7 @@ import {BsPersonFill, BsLightningFill} from 'react-icons/bs'
 
 export default function HeroSection() {
     return(
-        <section className="flex w-full gap-20 mt-24 items-center justify-between ">
+        <section className="flex w-full gap-20 mt-24 z-10 items-center justify-between ">
                 <div className='flex flex-col w-1/2 h-full gap-10 items-start justify-between'>
 
                     <div className="flex-col gap-2 justify-center  h-full  flex">
@@ -23,7 +23,7 @@ export default function HeroSection() {
 
                         
                 <div class="w-full max-w-sm hover:scale-[102%] transition hover:outline-double outline-amber-300   
-                  rounded-xl shadow bg-amber-600">
+                  rounded-xl shadow bg-amber-500 bg-opacity-20 hover:bg-amber-500 hover:bg-opacity-50">
                     <div class="flex justify-end px-4 pt-4">
                         <button id="dropdownButton" data-dropdown-toggle="dropdown" class="active:scale-110 inline-block border border-white text-white hover:scale-105 transition focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg text-sm p-1.5" type="button">
                             <span class="sr-only">Open dropdown</span>
@@ -35,7 +35,8 @@ export default function HeroSection() {
                     </div>
 
                     <div class="flex flex-col group items-center pb-10">
-                        <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-6/298841264_802905871121966_6082265023474547667_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=UVO_5nODTeUAX-Cyy6v&_nc_ht=scontent-bos5-1.xx&oh=00_AfA-P850rXQ73o-qf-c1dcxfUw2ehRoKWmCJtZtpItDzig&oe=64BAA7B9" alt="Harold image"/>
+                        <img class=" w-1/2 h-1/2 mb-3 rounded-full shadow-lg" 
+                        src="/src/assets/harold_linkedin_pic.jpeg"/>
                         <h5 class="mb-1 text-xl  text-white font-bold transition-all">Harold Than
                         </h5>
                         <span class="text-sm group-hover:text-amber-200 transition text-white">
