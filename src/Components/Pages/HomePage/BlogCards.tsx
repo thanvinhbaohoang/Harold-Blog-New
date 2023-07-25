@@ -18,7 +18,7 @@ function BlogStrip({post}:{post:Blog}){
             
             <div class="py-6 px-4  rounded-lg flex flex-col h-full justify-between w-full gap-2">
                 <div className="flex gap-2">
-                    <p className="text-xl font-bold text-amber-300 font-base">        Blockchain </p> 
+                    <p className="text-xl font-bold text-amber-300 font-base"> {post.category} </p> 
                     <p className="text-lg font-md text-gray-300">   -    {post.date} </p> 
                 </div>
 
@@ -44,6 +44,7 @@ import { render } from "react-dom";
 
 interface Blog {
     title: string;
+    category: string;
     date: string;
     content: string;
     author: string;

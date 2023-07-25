@@ -13,9 +13,12 @@ export default function ContactSection(){
                 </div>
             </div>
 
-                <button className="grey-button w-1/3  font-bold text-amber-400 px-10 border border-amber-300 border-opacity-20 outline-amber-300">
-                    Send me an Email !
+            <a href = "mailto: haroldthan@gmail.com">
+                <button className="grey-button w-1/5 font-bold text-amber-400 px-10 border border-amber-300 border-opacity-20 outline-amber-300">
+                    Send Email 
                 </button>
+            </a>
+            
             </section>
     )
 }
