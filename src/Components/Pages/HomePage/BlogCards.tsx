@@ -30,14 +30,15 @@ function BlogCard({post}:{post:Blog}){
 function BlogStrip({post}:{post:Blog}){
     return(
         <Link to = "/blog">
-        <div class="overflow-hidden  bg-white  hover:scale-[102%]  
-             transition 
+        <div class="overflow-hidden group bg-white  hover:scale-[102%]  
+             transition p-2
             active:translate-y-1 active:shadow-sm  rounded-xl 
-            border-gray-200 flex  flex-col items-center shadow dark:bg-gray-800 ">
+            border-gray-200 flex  flex-col items-center  dark:bg-gray-800 ">
 
-            <div className="h-[24em]">
-                <img class="w-full rounded-lg h-full object-cover" src="https://www.seiu1000.org/sites/main/files/imagecache/hero/main-images/camera_lense_0.jpeg" alt="Sunset in the mountains"></img>
+            <div className="h-[24em] ">
+                <img class="w-full transition group-hover:outline-double outline-offset-4 outline-amber-400 outline-4 rounded-lg h-full object-cover" src="https://www.seiu1000.org/sites/main/files/imagecache/hero/main-images/camera_lense_0.jpeg" alt="Sunset in the mountains"></img>
             </div>
+            
             <div class="py-6 flex flex-col h-full justify-between w-full gap-2">
                 <p className="text-lg font-md text-gray-400">        {post.date} </p> 
                 <div class="font-bold text-2xl mb-2">{post.title}</div>

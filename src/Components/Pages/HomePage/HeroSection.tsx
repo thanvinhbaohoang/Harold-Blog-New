@@ -22,9 +22,10 @@ export default function HeroSection() {
                 </div>
 
                         
-                <div class="w-full max-w-sm hover:scale-[102%] transition hover:outline-double outline-amber-300   bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div class="w-full max-w-sm hover:scale-[102%] transition hover:outline-double outline-amber-300   
+                  rounded-xl shadow bg-amber-600">
                     <div class="flex justify-end px-4 pt-4">
-                        <button id="dropdownButton" data-dropdown-toggle="dropdown" class="active:scale-110 inline-block border border-gray-600 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5" type="button">
+                        <button id="dropdownButton" data-dropdown-toggle="dropdown" class="active:scale-110 inline-block border border-white text-white hover:scale-105 transition focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg text-sm p-1.5" type="button">
                             <span class="sr-only">Open dropdown</span>
                             <div className="transition">
                                 <BsLightningFill/>
@@ -35,10 +36,11 @@ export default function HeroSection() {
 
                     <div class="flex flex-col group items-center pb-10">
                         <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-6/298841264_802905871121966_6082265023474547667_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=UVO_5nODTeUAX-Cyy6v&_nc_ht=scontent-bos5-1.xx&oh=00_AfA-P850rXQ73o-qf-c1dcxfUw2ehRoKWmCJtZtpItDzig&oe=64BAA7B9" alt="Harold image"/>
-                        <h5 class="mb-1 text-xl font-medium text-gray-900 font-bold transition-all
-                         dark:text-white">Harold Than
+                        <h5 class="mb-1 text-xl  text-white font-bold transition-all">Harold Than
                         </h5>
-                        <span class="text-sm group-hover:text-amber-400 transition text-gray-500 dark:text-gray-400">Full-Stack Developer</span>
+                        <span class="text-sm group-hover:text-amber-200 transition text-white">
+                            Full-Stack Developer
+                        </span>
                         <div class="flex items-center mt-4 space-x-3 text-sm  md:mt-6">
                             <a href="#" class="border rounded-full p-2 
                             opacity-50 hover:opacity-100 hover:scale-110 transition">
