@@ -13,7 +13,7 @@ export default function ProjectsSection(){
                 </button>
             </Link>
         </div>
-        <PostCards/>
+        <PostCards cardsNum={6}/>
     </section>
     )
 }

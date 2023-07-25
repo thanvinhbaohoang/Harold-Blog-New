@@ -101,11 +101,21 @@ My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
 
 export default function BlogContent() {
     return (
-    <div className=" flex-col items-center justify-between w-full  ">
+    <div className=" flex-col flex
+        items-center justify-between w-full gap-10
+        border-gray-700 rounded-2xl border ">
+                
+                
+            <img className="rounded-t-2xl" src="https://img.freepik.com/free-vector/app-development-illustration_52683-47931.jpg?w=2000&t=st=1690249526~exp=1690250126~hmac=f04e2b6df21ee69970ac5bd540f1142ff9e9f827bb14d5e55ebfebf0250b23de">
+            </img>
+
              <article className="prose-invert prose-img:rounded-xl 
              prose-a:text-amber-400 prose-a:font-bold  w-full
              mx-auto prose-lg max-w-none prose-p:text-gray-300 
-             prose-headings:font-bold prose-slate ">
+             prose-headings:font-bold prose-slate
+             p-10 ">
+                
+
                 <ReactMarkdown children={markdownContent}/>
             </article>
 

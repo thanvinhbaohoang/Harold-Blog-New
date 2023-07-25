@@ -9,7 +9,9 @@ export default function BlogsPage() {
                 <div>
 
                 </div>
-                <BlogCards fullCard={false} />
+                <BlogCards fullCard={false} cardsNum={10} />
+                {/* <BlogCards fullCard={true} /> */}
+
       </div>
 
     )

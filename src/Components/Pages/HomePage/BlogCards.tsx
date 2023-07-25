@@ -7,13 +7,15 @@ import { BsLightning } from "react-icons/bs";
 function BlogCard({post}:{post:Blog}){
     return(
        <Link to = "/blog">
-                <div class="overflow-hidden h-[100%] bg-white border hover:scale-[102%]  
+                <div class="overflow-hidden h-64 bg-white  hover:scale-[102%]  
                     hover:outline hover:outline-2 outline-offset-2 outline-amber-300 transition 
-                    active:translate-y-1 active:shadow-sm  
-                    border-gray-200 rounded-md flex flex-col items-center shadow dark:bg-gray-800 dark:border-gray-700">
+                    active:translate-y-1 active:shadow-sm hover:bg-slate-700 rounded-xl shadow-gray-900
+                    border-gray-200 flex  items-center shadow dark:bg-gray-800 dark:border-gray-700">
 
-                            
-                    <img class="w-full" src="https://www.seiu1000.org/sites/main/files/imagecache/hero/main-images/camera_lense_0.jpeg" alt="Sunset in the mountains"></img>
+                    <div className="w-1/3  rounded-xl h-full">
+                        <img class="w-full rounded-xl h-full object-cover" src="https://www.seiu1000.org/sites/main/files/imagecache/hero/main-images/camera_lense_0.jpeg" alt="Sunset in the mountains"></img>
+                    </div>
+
                     <div class="px-8 py-6 flex flex-col h-full justify-between w-full gap-2">
                         <div class="font-bold text-2xl mb-2">{post.title}</div>
                         <p class="text-gray-400 text-base"> {post.content}</p>
@@ -27,22 +29,24 @@ function BlogCard({post}:{post:Blog}){
 }
 function BlogStrip({post}:{post:Blog}){
     return(
-       <Link to = "/blog">
-                <div class="overflow-hidden w-[100%] h-[100%] rounded-md border-b border-opacity-50 border-gray-600 hover:bg-gray-600   hover:scale-[102%]  
-                    opacity-75 hover:opacity-100 transition 
-                    active:translate-y-1 active:shadow-sm  px-2
-                    flex flex-col items-center shadow">
+        <Link to = "/blog">
+        <div class="overflow-hidden  bg-white  hover:scale-[102%]  
+             transition 
+            active:translate-y-1 active:shadow-sm  rounded-xl 
+            border-gray-200 flex  flex-col items-center shadow dark:bg-gray-800 ">
 
-                            
-                    <div class="py-4 flex items-center h-full justify-between w-full gap-2">
-                        <div class="font-medium text-xl">{post.title}</div>
-                        {/* <p class="text-gray-400 text-base"> {post.content}</p> */}
-                        <p className="text-base font-bold text-amber-400 ">        {post.date} </p> 
-                    </div>
+            <div className="h-[24em]">
+                <img class="w-full rounded-lg h-full object-cover" src="https://www.seiu1000.org/sites/main/files/imagecache/hero/main-images/camera_lense_0.jpeg" alt="Sunset in the mountains"></img>
+            </div>
+            <div class="py-6 flex flex-col h-full justify-between w-full gap-2">
+                <p className="text-lg font-md text-gray-400">        {post.date} </p> 
+                <div class="font-bold text-2xl mb-2">{post.title}</div>
+                {/* <p class="text-gray-400 text-base"> {post.content}</p> */}
+            </div>
 
- 
-                </div>
-       </Link>
+
+        </div>
+</Link>
     )
 }
 
@@ -57,7 +61,7 @@ interface Blog {
     author: string;
 }
 
-export default function BlogCards(prop: { fullCard: boolean }){
+export default function BlogCards(prop: { fullCard: boolean, cardsNum: number }){
     const [loading, setLoading] = useState(false);
     const [blogs, setBlogs] = useState<Blog[]>([]);
 
@@ -86,15 +90,15 @@ export default function BlogCards(prop: { fullCard: boolean }){
   
     const renderCards = () => {
         return (
-            <div className="grid grid-cols-2  gap-4">
-           {blogs.slice(0,4).map((blog) => <BlogCard post={blog} />)}
+            <div className="grid grid-cols-1  gap-10">
+           {blogs.slice(0,prop.cardsNum).map((blog) => <BlogCard post={blog} />)}
         </div>
         )
     }
     const renderStrips = () => {
         return (
-            <div className="w-full grid grid-cols-1 ">
-           {blogs.map((blog) => <BlogStrip post={blog} />)}
+            <div className="w-full grid grid-cols-3 gap-6  auto-cols-auto auto-rows-fr">
+           {blogs.slice(0,prop.cardsNum).map((blog) => <BlogStrip post={blog} />)}
         </div>
         )
     }   
@@ -107,12 +111,6 @@ export default function BlogCards(prop: { fullCard: boolean }){
         } else {
             return renderStrips()
         }
-
-        return (
-            <div>
-                FUCK ME
-            </div>
-        )
     }
     
     const renderLoadingSpinner = () => {
@@ -162,7 +160,7 @@ export default function BlogCards(prop: { fullCard: boolean }){
 
     return (
 
-        <div className="flex flex-col w-full items-center justify-items-center">        
+        <div className="flex flex-col w-[100%] ">        
           {loading? (
            renderLoadingSpinner()
           ) :(styleToRender())} 

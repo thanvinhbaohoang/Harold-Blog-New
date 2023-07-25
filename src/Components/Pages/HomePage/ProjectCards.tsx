@@ -104,12 +104,12 @@ const Projects:Project[]=[
 
 
 ]
-export default function ProjectCards(){
+export default function ProjectCards(prop: {cardsNum: number }){
     return (
-        <div className="grid grid-cols-2 w-full gap-4">
+        <div className="grid grid-cols-3 w-full gap-4">
             
           {
-            Projects.map((Project) => <ProjectCard Project={Project} />)
+            Projects.slice(0,prop.cardsNum).map((Project) => <ProjectCard Project={Project} />)
           }
       </div>
     )

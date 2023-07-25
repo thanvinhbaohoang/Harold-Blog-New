@@ -1,15 +1,36 @@
 import BlogContent from "./BlogContent"
 import BlogContentScroll from "../BlogContentScroll"
-
+import {BsPersonFill, BsLightningCharge} from 'react-icons/bs'
+import {BiComment} from 'react-icons/bi'
 
 export default function BlogPage(){
 
     return(
            <div className="flex w-full mt-10 ">
-                <div className=" border-gray-500 gap-4 flex border-opacity-50 rounded-lg">
+                <div className=" border-gray-500 gap-4 flex border-opacity-10 rounded-lg">
+                    
+                    <div className="w-12 ">
+                        <div className="fixed flex text-gray-500 flex-col gap-6 items-center justify-start">
+                            <div className="hover:text-white cursor-pointer transition ease-out flex items-center flex-col">
+                                <div className="hover:scale-125 transition">
+                                    <BsLightningCharge size={30}/>
+                                </div>
+                                90
+                            </div>
+
+                            <div className="hover:text-white cursor-pointer transition ease-out flex items-center flex-col">
+                                <div className="hover:scale-125 transition">
+                                <BiComment size={30}/>
+                                </div>
+                                69
+                            </div>
+                        </div>
+
+                    </div>
+                    
                     <BlogContent/>
 
-                    <div className=" w-1/2 flex flex-col gap-6">
+                    <div className=" w-1/4 flex flex-col gap-6">
                         
                         <div className="border p-6 text-base flex flex-col border-gray-600 bg-gray-800 gap-4 rounded-lg">
                             <h1 className="text-lg font-bold">About Me</h1>
@@ -17,7 +38,6 @@ export default function BlogPage(){
                             <p>
                                 Hello and thanks for visiting! My name is Harold Than, and this is my website and digital garden. 🌱
                                
-                               <br/><br/>I'm a software developer who creates open-source projects and writes about code, design, and life. This site is and has always been free of ads, trackers, social media, affiliates, and sponsored posts.
                             </p>
                         </div>
 
