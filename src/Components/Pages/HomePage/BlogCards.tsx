@@ -11,10 +11,10 @@ function BlogStrip({post}:{post:Blog}){
         <div class="overflow-hidden group  shadow-md hover:scale-[102%]  
              transition hover:shadow-2xl hover:shadow-gray-900
             active:translate-y-1 active:shadow-sm  rounded-xl 
-            border-gray-200 flex  flex-col items-center   border-opacity-10">
+            flex  flex-col items-center   border-opacity-10">
 
-                <img class="w-full h-[16em] transition  outline-offset-4 outline-amber-400 
-                outline-4 rounded-lg object-cover" src="https://www.seiu1000.org/sites/main/files/imagecache/hero/main-images/camera_lense_0.jpeg" alt="Sunset in the mountains"></img>
+                <img class="w-full h-[16em] transition 
+                rounded-lg object-cover" src={post.imageURL}></img>
             
             <div class="py-6 px-4  rounded-lg flex flex-col h-full justify-between w-full gap-2">
                 <div className="flex gap-2">
@@ -48,6 +48,7 @@ interface Blog {
     date: string;
     content: string;
     author: string;
+    imageURL?: string;
 }
 
 export default function BlogCards(prop: { fullCard: boolean, cardsNum: number }){

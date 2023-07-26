@@ -111,12 +111,7 @@ const Projects:Project[]=[
         demoURL: "https://cashstreamcrypto.com/",
         sourceURL: "https://github.com/thanvinhbaohoang/CashStream"
     },
-    {
-        title: "EtherStream", 
-        date: "2021-10-10",
-        author: "Harold Than",
-        content: " Lorem Ipsum bla blab oajdaksdm hell oworld bull shit what ever", 
-    },{
+   {
         title: "DartMart", 
         date: "2021-10-10",
         author: "Harold Than",
