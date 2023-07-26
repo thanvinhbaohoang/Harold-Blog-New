@@ -9,7 +9,7 @@ export default function BlogsPage() {
                         <div class="max-w-md">
                         <h1 class="text-sm font-bold text-teal-300">Showcase </h1>
                         <p class="py-6 text-5xl font-bold">Welcome to my Blog Posts.</p>
-                        <p className="text-gray-500">Well not quite anything, like you can't build a spaceship with it. But you can definitely build the website for the spaceship —</p>
+                        <p className="text-gray-500">Well not quite anything, like you can't read posts I have not completed. But you can definitely read the ones I had published :)</p>
                         </div>
                     </div>
                 </div>
@@ -19,8 +19,7 @@ export default function BlogsPage() {
                 <div>
 
                 </div>
-                <BlogCards fullCard={false} cardsNum={10} />
-                {/* <BlogCards fullCard={true} /> */}
+                <BlogCards fullCard={false} cardsNum={12} />
 
       </div>
 
