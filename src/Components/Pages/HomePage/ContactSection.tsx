@@ -5,7 +5,7 @@ export default function ContactSection(){
             <div className="items-center flex flex-col">
                 <h1 className="font-bold text-4xl ">Contact Me</h1>
                 <p className="font-md text-amber-300">Get in Touch </p>
-                <p className="text-sm text-gray-400">I am currently open for work </p>
+                <p className="text-sm font-light text-teal-400">I am currently open for work </p>
 
                 <div className="flex flex-col items-center text-right opacity-50 my-6">
                     <p> haroldthan@gmail.com</p>

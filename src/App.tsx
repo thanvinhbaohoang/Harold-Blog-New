@@ -50,7 +50,7 @@ export default function App() {
                 </Routes> 
               </div>
 
-              <div className="w-[80vw]  mt-10 lg:w-[60vw] flex flex-col  text-white ">
+              <div className=" mt-24">
                 <Footer/>
               </div>
           </div>
