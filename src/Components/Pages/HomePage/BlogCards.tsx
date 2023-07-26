@@ -81,7 +81,7 @@ export default function BlogCards(prop: { fullCard: boolean, cardsNum: number })
 
     const renderStrips = () => {
         return (
-            <div className="w-full grid grid-cols-3 gap-6  auto-cols-auto auto-rows-fr">
+            <div className="w-full grid  grid-cols-1 lg:grid-cols-3 gap-6  auto-cols-auto auto-rows-fr">
            {blogs.slice(0,prop.cardsNum).map((blog) => <BlogStrip post={blog} />)}
         </div>
         )

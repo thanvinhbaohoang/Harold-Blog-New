@@ -211,7 +211,7 @@ export default function ProjectCards(prop: {cardsNum: number }){
 
     const renderOtherProjects= () => {
         return(
-            <div className="grid z-10 grid-cols-3 w-full gap-4">
+            <div className="grid z-10 grid-cols-1 lg:grid-cols-3 w-full gap-4">
                 {
                     Projects.slice(0,prop.cardsNum).map((Project) => <ProjectCard Project={Project} />)
                 }

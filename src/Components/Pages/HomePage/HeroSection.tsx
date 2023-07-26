@@ -4,8 +4,11 @@ import {BsPersonFill, BsLightningFill} from 'react-icons/bs'
 
 export default function HeroSection() {
     return(
-        <section className="flex w-full gap-20 mt-24 z-10 items-center justify-between ">
-                <div className='flex flex-col w-1/2 h-full gap-10 items-start justify-between'>
+        <section className="flex flex-col lg:flex-row w-full gap-20 mt-24 z-10 items-center justify-between ">
+                <div className='flex flex-col 
+                h-full gap-10 items-start justify-between
+                lg:w-1/2 
+                '>
 
                     <div className="flex-col gap-2 justify-center  h-full  flex">
                         <h1 className="font-bold text-5xl"> Hey, I'm <span className="hover-underline">Harold Than!</span></h1>
@@ -15,14 +18,17 @@ export default function HeroSection() {
                         Currently working on Bitcoin and Ethereum projects to further cryptocurrency adoption <span className="">😎</span></p>
                     </div>
 
-                    <button className='grey-button text-amber-300 border-2 border-amber-400 bg-zinc-800 outline-yellow-300'>
+                    <button className='grey-button text-amber-300 border-2
+                    w-full
+                    lg:w-auto
+                    border-amber-400 bg-zinc-800 outline-yellow-300'>
                         Resume
                     </button>
 
                 </div>
 
                         
-                <div class="w-full max-w-sm hover:scale-[102%] transition hover:outline-double outline-amber-300   
+                <div class="w-full lg:order-2 lg:display-none max-w-sm hover:scale-[102%] transition hover:outline-double outline-amber-300   
                   rounded-xl shadow bg-amber-500 bg-opacity-20 hover:bg-amber-500 hover:bg-opacity-50">
                     <div class="flex justify-end px-4 pt-4">
                         <button id="dropdownButton" data-dropdown-toggle="dropdown" class="active:scale-110 inline-block border border-white text-white hover:scale-105 transition focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg text-sm p-1.5" type="button">
