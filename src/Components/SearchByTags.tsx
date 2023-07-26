@@ -1,10 +1,3 @@
-import React from "react";
-
-
-
-interface Tag {
-    tag: string;
-}
 
 
 

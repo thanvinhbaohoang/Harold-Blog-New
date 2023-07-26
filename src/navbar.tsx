@@ -1,9 +1,5 @@
-
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiExternalLink } from 'react-icons/fi';
-
-
 
 export default function NavBar() {
     return (
@@ -17,37 +13,37 @@ export default function NavBar() {
 
                 <ul className='flex text-xl  font-md gap-4 mt-4'>
                     <Link to="/">
-                        <a class="group text-gray-400 hover:text-white transition-all " href="#">
-                            <span class="bg-left-bottom bg-gradient-to-r from-teal-300 to-teal-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                        <a className="group text-gray-400 hover:text-white transition-all " href="#">
+                            <span className="bg-left-bottom bg-gradient-to-r from-teal-300 to-teal-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                                 About
                             </span>
                         </a>
                     </Link>
 
                     <Link to="/projects">
-                    <a class="group text-gray-400 hover:text-white transition-all " href="#">
-                            <span class="bg-left-bottom bg-gradient-to-r from-pink-400 to-pink-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    <a className="group text-gray-400 hover:text-white transition-all " href="#">
+                            <span className="bg-left-bottom bg-gradient-to-r from-pink-400 to-pink-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                                 Projects
                             </span>
                         </a>                    
                     </Link>
 
                     <Link to="/blogs">
-                    <a class="group text-gray-400 hover:text-white transition-all " href="#">
-                            <span class="bg-left-bottom bg-gradient-to-r from-amber-400 to-amber-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    <a className="group text-gray-400 hover:text-white transition-all " href="#">
+                            <span className="bg-left-bottom bg-gradient-to-r from-amber-400 to-amber-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                                 Blog
                             </span>
                     </a>                    
                     </Link>
 
-                    {/* <a class="group text-gray-400 hover:text-white transition-all " href="#">
-                            <span class="bg-left-bottom bg-gradient-to-r from-emerald-300 to-emerald-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    {/* <a className="group text-gray-400 hover:text-white transition-all " href="#">
+                            <span className="bg-left-bottom bg-gradient-to-r from-emerald-300 to-emerald-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                                 Contact
                             </span>
                         </a>   */}
                     
-                    <a class="group text-gray-400 hover:text-white transition-all" href="https://github.com/thanvinhbaohoang"  rel="noopener noreferrer" target="_blank">
-                            <span class="bg-left-bottom flex items-center gap-2 bg-gradient-to-r from-purple-400 to-teal-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    <a className="group text-gray-400 hover:text-white transition-all" href="https://github.com/thanvinhbaohoang"  rel="noopener noreferrer" target="_blank">
+                            <span className="bg-left-bottom flex items-center gap-2 bg-gradient-to-r from-purple-400 to-teal-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                                 Github <FiExternalLink size={16}/>
                             </span>
                         </a>  

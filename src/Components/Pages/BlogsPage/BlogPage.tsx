@@ -1,6 +1,5 @@
 import BlogContent from "./BlogContent"
-import BlogContentScroll from "../BlogContentScroll"
-import {BsPersonFill, BsLightningCharge} from 'react-icons/bs'
+import { BsLightningCharge} from 'react-icons/bs'
 import {BiComment} from 'react-icons/bi'
 
 export default function BlogPage(){
@@ -34,7 +33,7 @@ export default function BlogPage(){
                         
                         <div className="border p-6 text-base flex flex-col border-gray-600 bg-gray-800 gap-4 rounded-lg">
                             <h1 className="text-lg font-bold">About Me</h1>
-                            <img class=" w-1/2 h-1/2 mb-3 rounded-lg shadow-lg" 
+                            <img className=" w-1/2 h-1/2 mb-3 rounded-lg shadow-lg" 
                         src="/src/assets/harold_linkedin_pic.jpeg"/>
                       
 

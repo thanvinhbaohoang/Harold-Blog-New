@@ -1,29 +1,28 @@
-import React, { ComponentProps, useState } from "react";
+import { useState } from "react";
 import { db } from "../../../firebase-config";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { BsLightning } from "react-icons/bs";
 import { BsArrowRight } from "react-icons/bs";
 
 function BlogStrip({post}:{post:Blog}){
     return(
         <Link to = "/blog">
-        <div class="overflow-hidden group  shadow-md hover:scale-[102%]  
+        <div className="overflow-hidden group  shadow-md hover:scale-[102%]  
              transition hover:shadow-2xl hover:shadow-gray-900
             active:translate-y-1 active:shadow-sm  rounded-xl 
             flex  flex-col items-center   border-opacity-10">
 
-                <img class="w-full h-[16em] transition 
+                <img className="w-full h-[16em] transition 
                 rounded-lg object-cover" src={post.imageURL}></img>
             
-            <div class="py-6 px-4  rounded-lg flex flex-col h-full justify-between w-full gap-2">
+            <div className="py-6 px-4  rounded-lg flex flex-col h-full justify-between w-full gap-2">
                 <div className="flex gap-2">
                     <p className="text-xl font-bold text-amber-300 font-base"> {post.category} </p> 
                     <p className="text-lg font-md text-gray-300">   -    {post.date} </p> 
                 </div>
 
-                <div class="font-bold text-2xl mb-2">{post.title}</div>
-                <p class="text-gray-400 text-base"> {post.content}</p>
+                <div className="font-bold text-2xl mb-2">{post.title}</div>
+                <p className="text-gray-400 text-base"> {post.content}</p>
                 <div className=" text-teal-400 text-lg font-thin flex items-center gap-2">
                     Read Post 
                     <div className="group-hover:translate-x-2  transition">
@@ -38,9 +37,7 @@ function BlogStrip({post}:{post:Blog}){
     )
 }
 
-
 import { collection, getDocs } from "firebase/firestore"; 
-import { render } from "react-dom";
 
 interface Blog {
     title: string;
@@ -91,7 +88,7 @@ export default function BlogCards(prop: { fullCard: boolean, cardsNum: number })
         console.log(prop.fullCard)
         if (prop.fullCard) {
 
-            return renderCards()
+            // return renderCards()
         } else {
             return renderStrips()
         }

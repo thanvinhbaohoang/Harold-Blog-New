@@ -1,17 +1,19 @@
-import React from "react";
 import { FiExternalLink } from 'react-icons/fi';
 import { FaGithub } from 'react-icons/fa'
+import { Project } from '../ProjectsPage/ProjectsPage';
+
+
 
 function FeaturedProject({Project}:{Project:Project}) {
   return (
-<section class="z-10 transition cursor-pointer 
+<section className="z-10 transition cursor-pointer 
             hover:bg-indigo-600   hover:bg-opacity-20 
             group  hover:shadow-xl bg-indigo-800 bg-opacity-10
             backdrop-opacity-5 backdrop-blur-3xl
             p-4 mb-10 rounded-3xl">
-                <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-                    <div class="mr-auto place-self-center lg:col-span-7">
-                            <h1 class="max-w-2xl mb-4 
+                <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+                    <div className="mr-auto place-self-center lg:col-span-7">
+                            <h1 className="max-w-2xl mb-4 
                             text-4xl font-extrabold 
                             tracking-tight leading-none 
                             md:text-5xl xl:text-6xl 
@@ -20,10 +22,10 @@ function FeaturedProject({Project}:{Project:Project}) {
                             transition">
                                 {Project.title}
                             </h1>
-                            <p class="max-w-2xl font-light text-indigo-300 lg:mb-8 md:text-lg lg:text-2xl ">
+                            <p className="max-w-2xl font-light text-indigo-300 lg:mb-8 md:text-lg lg:text-2xl ">
                                 Ethereum
                             </p>
-                            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-lg dark:text-gray-400">
+                            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-lg dark:text-gray-400">
                             {Project.content}
                             </p>
                             
@@ -41,7 +43,7 @@ function FeaturedProject({Project}:{Project:Project}) {
                                
                             </div>
 
-                            <div className="hidden lg:display flex h-14 text-sm my-10 gap-2">
+                            <div className="hidden lg:flex h-14 text-sm my-10 gap-2">
                                 <button className="rounded-full px-6 font-bold bg-emerald-400 text-emerald-200 bg-opacity-10">
                                     NodeJS
                                 </button>
@@ -56,7 +58,7 @@ function FeaturedProject({Project}:{Project:Project}) {
                             
                     </div>
 
-                    <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                    <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
                         <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup"></img>
                     </div>                
                 </div>
@@ -67,17 +69,17 @@ function FeaturedProject({Project}:{Project:Project}) {
 function ProjectCard({Project}:{Project:Project}){
     return(
     
-            <a href="#" class="flex flex-col items-center p-4 bg-gray-800
+            <a href="#" className="flex flex-col items-center p-4 bg-gray-800
                         border transition border-gray-700 rounded-lg 
                         outline-white hover:scale-[101%]
                         hover:outline-amber-400 hover:outline-double outline-4 outline-offset-2 
                         shadow">
-                <div class="flex flex-col justify-between p-4 w-full">
+                <div className="flex flex-col justify-between p-4 w-full">
                     <p className="text-base text-amber-400"> {Project.date}</p>
-                    <h5 class="mb-2 text-xl hover-underline transition font-bold tracking-tight text-gray-900 dark:text-white">
+                    <h5 className="mb-2 text-xl hover-underline transition font-bold tracking-tight text-gray-900 dark:text-white">
                         {Project.title}
                     </h5>
-                    <p class="mb-3 font-normal text-base text-gray-700 dark:text-gray-400">
+                    <p className="mb-3 font-normal text-base text-gray-700 dark:text-gray-400">
                         {Project.content}
                     </p>
                     
@@ -180,23 +182,10 @@ const Projects:Project[]=[
 ]
 
 
-import { useState } from "react";
-
-export interface Project {
-    title: string;
-    date: string;
-    content: string;
-    author: string;
-    featured?: boolean;
-    imageURL?: string;
-    demoURL?: string;
-    sourceURL?: string;
-    tags?: string[];
-}
-
+// import { useState } from "react";
 export default function ProjectCards(prop: {cardsNum: number }){
-    const [loading, setLoading] = useState(false);
-    const [projects, setProjects] = useState<Project[]>([]);
+    // const [loading, setLoading] = useState(false);
+    // const [projects, setProjects] = useState<Project[]>([]);
 
     const renderFeatured = () => {
         return(

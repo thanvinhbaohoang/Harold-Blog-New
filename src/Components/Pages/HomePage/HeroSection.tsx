@@ -28,11 +28,11 @@ export default function HeroSection() {
                 </div>
 
                         
-                <div class="w-full lg:order-2 lg:display-none max-w-sm hover:scale-[102%] transition hover:outline-double outline-amber-300   
+                <div className="w-full lg:order-2 lg:display-none max-w-sm hover:scale-[102%] transition hover:outline-double outline-amber-300   
                   rounded-xl shadow bg-amber-500 bg-opacity-20 hover:bg-amber-500 hover:bg-opacity-50">
-                    <div class="flex justify-end px-4 pt-4">
-                        <button id="dropdownButton" data-dropdown-toggle="dropdown" class="active:scale-110 inline-block border border-white text-white hover:scale-105 transition focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg text-sm p-1.5" type="button">
-                            <span class="sr-only">Open dropdown</span>
+                    <div className="flex justify-end px-4 pt-4">
+                        <button id="dropdownButton" data-dropdown-toggle="dropdown" className="active:scale-110 inline-block border border-white text-white hover:scale-105 transition focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg text-sm p-1.5" type="button">
+                            <span className="sr-only">Open dropdown</span>
                             <div className="transition">
                                 <BsLightningFill/>
                             </div>
@@ -40,30 +40,30 @@ export default function HeroSection() {
                      
                     </div>
 
-                    <div class="flex flex-col group items-center pb-10">
-                        <img class=" w-1/2 h-1/2 mb-3 rounded-full shadow-lg" 
-                        src="/src/assets/harold_linkedin_pic.jpeg"/>
-                        <h5 class="mb-1 text-xl  text-white font-bold transition-all">Harold Than
+                    <div className="flex flex-col group items-center pb-10">
+                        <img className=" w-1/2 h-1/2 mb-3 rounded-full shadow-lg" 
+                        src="./harold_linkedin_pic.jpeg"/>
+                        <h5 className="mb-1 text-xl  text-white font-bold transition-all">Harold Than
                         </h5>
-                        <span class="text-sm group-hover:text-amber-200 transition text-white">
+                        <span className="text-sm group-hover:text-amber-200 transition text-white">
                             Full-Stack Developer
                         </span>
-                        <div class="flex items-center mt-4 space-x-3 text-sm  md:mt-6">
-                            <a href="#" class="border rounded-full p-2 
+                        <div className="flex items-center mt-4 space-x-3 text-sm  md:mt-6">
+                            <a href="#" className="border rounded-full p-2 
                             opacity-50 hover:opacity-100 hover:scale-110 transition">
                                 <div className="group-hover:animate-spin transition ">
                                     <BsPersonFill/>
                                 </div>                              
                             </a>
 
-                            <a href="#" class="border rounded-full p-2 
+                            <a href="#" className="border rounded-full p-2 
                             opacity-50 hover:opacity-100 hover:scale-110 transition">
                                 <div className="group-hover:animate-spin transition ">
                                     <FaLinkedinIn/>
                                 </div>                            
                                 </a> 
                             
-                              <a href="#" class="border rounded-full p-2 group
+                              <a href="#" className="border rounded-full p-2 group
                             opacity-50 hover:opacity-100 hover:scale-110 transition">
                                 <div className="group-hover:animate-spin transition ">
                                     <FaGithub/>
@@ -71,7 +71,7 @@ export default function HeroSection() {
                                 </a>
 
 
-                              <a href="#" class="border rounded-full p-2 
+                              <a href="#" className="border rounded-full p-2 
                             opacity-50 hover:opacity-100 hover:scale-110 transition">
  <div className="group-hover:animate-spin transition ">
                                     <FaInstagram/>
