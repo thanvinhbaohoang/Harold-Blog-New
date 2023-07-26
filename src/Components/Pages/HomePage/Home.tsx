@@ -9,7 +9,7 @@ import ContactSection from "./ContactSection";
 export default function Home() {
     
     return(
-        <div className="flex  flex-col items-center gap-24 ">
+        <div className="flex w-full flex-col items-center gap-24 ">
             <HeroSection/>
             <ProjectsSection/>
             <BlogsSection/>

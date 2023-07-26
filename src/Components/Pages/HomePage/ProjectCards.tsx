@@ -41,7 +41,7 @@ function FeaturedProject({Project}:{Project:Project}) {
                                
                             </div>
 
-                            <div className="flex h-14 text-sm my-10 gap-2">
+                            <div className="hidden lg:display flex h-14 text-sm my-10 gap-2">
                                 <button className="rounded-full px-6 font-bold bg-emerald-400 text-emerald-200 bg-opacity-10">
                                     NodeJS
                                 </button>

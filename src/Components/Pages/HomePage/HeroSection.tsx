@@ -7,10 +7,10 @@ export default function HeroSection() {
         <section className="flex flex-col lg:flex-row w-full gap-20 mt-24 z-10 items-center justify-between ">
                 <div className='flex flex-col 
                 h-full gap-10 items-start justify-between
-                lg:w-1/2 
+                lg:w-1/2    
                 '>
 
-                    <div className="flex-col gap-2 justify-center  h-full  flex">
+                    <div className="flex-col gap-2 justify-center  flex">
                         <h1 className="font-bold text-5xl"> Hey, I'm <span className="hover-underline">Harold Than!</span></h1>
                         <a className="text-2xl opacity-60 hover:underline underline-offset-4 hover:text-indigo-400 transition">Full-stack Developer  </a>
                         <p className="text-xl opacity-80"> I am a musician with <em className="text-amber-400">burning passion</em> 🔥 
