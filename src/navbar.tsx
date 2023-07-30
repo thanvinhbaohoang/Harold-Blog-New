@@ -12,7 +12,7 @@ export default function NavBar() {
                 </a>
 
                 <ul className='flex text-xl  font-md gap-4 mt-4'>
-                    <Link to="/">
+                    <Link to="/about">
                         <a className="group text-gray-400 hover:text-white transition-all " href="#">
                             <span className="bg-left-bottom bg-gradient-to-r from-teal-300 to-teal-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                                 About

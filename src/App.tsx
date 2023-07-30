@@ -28,11 +28,6 @@ export default function App() {
 
           <div className="lg:w-[60vw] w-[90%] ">
               <NavBar />
-             
-
-              
-              
-
                 <div className=" flex flex-col items-center  text-white ">
                 <Routes> 
                   <Route path="/" element={<Home/> } /> 

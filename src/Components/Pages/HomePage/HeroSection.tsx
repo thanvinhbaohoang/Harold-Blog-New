@@ -18,12 +18,16 @@ export default function HeroSection() {
                         Currently working on Bitcoin and Ethereum projects to further cryptocurrency adoption <span className="">😎</span></p>
                     </div>
 
-                    <button className='grey-button text-amber-300 border-2
-                    w-full
-                    lg:w-auto
-                    border-amber-400 bg-zinc-800 outline-yellow-300'>
-                        Resume
-                    </button>
+                    <a target='_blank' 
+                    href='https://docs.google.com/document/u/1/d/e/2PACX-1vT7jG9ED_WYzJbgSqhLpmJfY8-fSg-YP_qMpTGUy4krmKYT83z9a22hPUiM7kSi4g/pub'>
+                        <button className='grey-button text-amber-300 border-2
+                        w-full
+                        lg:w-auto
+                        border-amber-400 bg-zinc-800 outline-yellow-300'>
+                            Resume
+                        </button>
+                    </a>
+                   
 
                 </div>
 
@@ -79,6 +83,9 @@ export default function HeroSection() {
                         </div>
                     </div>
                 </div>
+
+
+                
            </section>
     )
 }

@@ -30,12 +30,12 @@ function FeaturedProject({Project}:{Project:Project}) {
                             </p>
                             
                             <div className="flex gap-6">
-                                <a href={Project.sourceURL} target="_blank" >
+                                <a href={Project.sourceURL? Project.sourceURL :"https://github.com/thanvinhbaohoang"} target="_blank" >
                                     <button className="grey-button flex items-center gap-2"> 
                                         <FaGithub/> GitHub 
                                     </button>
                                 </a>
-                                <a href={Project.demoURL} target="_blank" >
+                                <a href={Project.demoURL? Project.demoURL :"https://github.com/thanvinhbaohoang"} target="_blank" >
                                     <button className="grey-button flex items-center gap-2"> 
                                         <FiExternalLink/> Site 
                                     </button>
@@ -85,13 +85,21 @@ function ProjectCard({Project}:{Project:Project}){
                     
                     
                     <div className="flex gap-4">
-                        <button className="grey-button flex items-center gap-2 ">
-                            Demo <FiExternalLink size={16}/>
-                        </button>
 
-                        <button className="grey-button flex items-center gap-2 bg-amber-600">
-                            Source <FiExternalLink size={16}/>
-                        </button>
+                        <a className={Project.demoURL? "flex" : "hidden"}
+                        href={Project.demoURL? Project.demoURL:"https://github.com/thanvinhbaohoang"} target="_blank" >
+                            <button className="grey-button flex items-center gap-2 ">
+                                Demo <FiExternalLink size={16}/>
+                            </button>
+                        </a>
+
+                        <a className={Project.sourceURL? "flex" : "hidden"}
+                        href={Project.sourceURL? Project.sourceURL: "https://github.com/thanvinhbaohoang"} target="_blank" >
+                            <button className="grey-button flex items-center gap-2 bg-amber-600">
+                                Source <FiExternalLink size={16}/>
+                            </button>
+                        </a>
+
                     </div>
                 
                 </div>
@@ -113,23 +121,28 @@ const Projects:Project[]=[
         demoURL: "https://cashstreamcrypto.com/",
         sourceURL: "https://github.com/thanvinhbaohoang/CashStream"
     },
+    {
+        title: "BlockStay", 
+        date: "2023",
+        author: "Harold Than",
+        content: "Hotel Door Lock IOT Based project that authenticate using CashStream", 
+        sourceURL: "https://github.com/thanvinhbaohoang/BlockStay",
+        demoURL:"https://devpost.com/software/blockstay"
+
+    },
    {
         title: "DartMart", 
-        date: "2021-10-10",
+        date: "2022",
         author: "Harold Than",
-        content: "A Dartmouth College specific food delivery app with DUO 2-FA Authentication", 
+        content: "A React Native mobile app for food delivery at Dartmouth College with DUO 2-FA Authentication", 
+        sourceURL: "https://github.com/thanvinhbaohoang/project-dartmart"
     },
     {
         title: "Spectre Wallet", 
-        date: "2021-10-10",
+        date: "2022",
         author: "Harold Than",
         content: "A Crypto Wallet Web-App and React-Native-App Designed and Implemented using Bitcore-lib", 
-    },
-    {
-        title: "CAD Walking Serpent", 
-        date: "2021-10-10",
-        author: "Harold Than",
-        content: " Lorem Ipsum bla blab oajdaksdm hell oworld bull shit what ever", 
+        sourceURL:"https://github.com/thanvinhbaohoang/spectre-wallet-web"
     },
     {
         title: "Tiny Search Engine", 
@@ -142,16 +155,19 @@ const Projects:Project[]=[
         date: "2021-10-10",
         author: "Harold Than",
         content: "Pure CSS and HTML Card 'Game' Based On SimplyExplained's Youtube Video of the same name", 
+        sourceURL:"https://github.com/thanvinhbaohoang/Is-She-Into-You-",
+        demoURL:"https://is-she-into-you.onrender.com/"
     },{
         title: "Sudoku Generator and Solver", 
         date: "2021-10-10",
         author: "Harold Than",
         content: " A Sudoku Game Generator and Solver Program written in C", 
     },{
-        title: "SpooderMan", 
+        title: "Youtube Clone with Redux", 
         date: "2021-10-10",
         author: "Harold Than",
-        content: " Swing Around the city skyline and beat up bean-people ('oof') as Spooderman.", 
+        content: "Youtube Clone with Redux for state management.",
+        demoURL:"https://sa5-youtubeclone-with-redux.onrender.com/" 
     },{
         title: "Ivy League Sentiments", 
         date: "2021-10-10",
@@ -159,25 +175,25 @@ const Projects:Project[]=[
         content: "Data Analysis through Web-Scraping Reddit and Twitter to get the general sentiments of each Ivy League College Online", 
     },{
         title: "Boids Deep Sea Simulation", 
-        date: "2021-10-10",
+        date: "2022",
         author: "Harold Than",
         content: "A Deep Sea VR Cage Diving Experience with Schools Of Fish behavior simulated with Boids Algorithm", 
     },{
         title: "Ad-VR-Tise", 
-        date: "2021-10-10",
+        date: "2022",
         author: "Harold Than",
         content: " 3D Consensual Advertisement Model with Interactive UI for the mostly unexplored VR Metaverse ads space", 
     },{
         title: "GuitAR Hero", 
-        date: "2021-10-10",
+        date: "2022",
         author: "Harold Than",
         content: "Learn to play real guitar through a Guitar Hero Game using Augmented Reality", 
     },
     {
         title: "Hidden Markov Tagger", 
-        date: "2021-10-10",
+        date: "2021",
         author: "Harold Than",
-        content: " Lorem Ipsum bla blab oajdaksdm hell oworld bull shit what ever", 
+        content: "An NLP Part-Of-Speech tagger that use State machine to categorize words ", 
     },
 ]
 
