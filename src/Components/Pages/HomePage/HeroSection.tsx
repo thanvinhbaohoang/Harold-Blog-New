@@ -53,21 +53,21 @@ export default function HeroSection() {
                             Full-Stack Developer
                         </span>
                         <div className="flex items-center mt-4 space-x-3 text-sm  md:mt-6">
-                            <a href="#" className="border rounded-full p-2 
+                            {/* <a href="#" className="border rounded-full p-2 
                             opacity-50 hover:opacity-100 hover:scale-110 transition">
                                 <div className="group-hover:animate-spin transition ">
                                     <BsPersonFill/>
                                 </div>                              
-                            </a>
+                            </a> */}
 
-                            <a href="#" className="border rounded-full p-2 
+                            <a href="https://www.linkedin.com/in/harold-than/" target="_blank" className="border rounded-full p-2 
                             opacity-50 hover:opacity-100 hover:scale-110 transition">
                                 <div className="group-hover:animate-spin transition ">
                                     <FaLinkedinIn/>
                                 </div>                            
                                 </a> 
                             
-                              <a href="#" className="border rounded-full p-2 group
+                              <a href="https://github.com/thanvinhbaohoang/"  target="_blank" className="border rounded-full p-2 group
                             opacity-50 hover:opacity-100 hover:scale-110 transition">
                                 <div className="group-hover:animate-spin transition ">
                                     <FaGithub/>
@@ -75,11 +75,12 @@ export default function HeroSection() {
                                 </a>
 
 
-                              <a href="#" className="border rounded-full p-2 
+                              <a href="https://www.instagram.com/haroldwithoutkumar/"  target="_blank" className="border rounded-full p-2 
                             opacity-50 hover:opacity-100 hover:scale-110 transition">
  <div className="group-hover:animate-spin transition ">
                                     <FaInstagram/>
-                                </div>                            </a>
+                                </div>                            
+                            </a>
                         </div>
                     </div>
                 </div>

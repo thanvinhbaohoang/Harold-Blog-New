@@ -1,5 +1,5 @@
 // import SearchByTags from "../../SearchByTags";
-// import BlogCards from "./BlogCards";
+import BlogCards from "./BlogCards";
 import { Link } from "react-router-dom";
 
 export default function BlogsSection() {
@@ -13,7 +13,7 @@ export default function BlogsSection() {
                         </button>
                     </Link>
                 </div>
-                {/* <BlogCards fullCard={false} cardsNum={3} /> */}
+                <BlogCards fullCard={false} cardsNum={3} />
 
                 <div className="text-3xl text-center rounded-lg p-10 text-red-400">
                     Blogs Page is being under construction right now

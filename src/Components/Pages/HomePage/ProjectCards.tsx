@@ -69,12 +69,17 @@ function FeaturedProject({Project}:{Project:Project}) {
 function ProjectCard({Project}:{Project:Project}){
     return(
     
-            <a href="#" className="flex flex-col items-center p-4 bg-gray-800
+            <a href="#" className="flex flex-col items-center bg-gray-800
                         border transition border-gray-700 rounded-lg 
                         outline-white hover:scale-[101%]
                         hover:outline-amber-400 hover:outline-double outline-4 outline-offset-2 
                         shadow">
-                <div className="flex flex-col justify-between p-4 w-full">
+                
+                <img className='rounded-t-lg w-full h-56 z-0   object-cover flex items-center justify-center'
+                    src={Project.imageURL? Project.imageURL : "https://img.freepik.com/free-vector/design-team-cartoon-landing-page-with-designers_107791-11253.jpg?w=2000&t=st=1690681676~exp=1690682276~hmac=20b53ed3a0f74a1c4cb32aca90323fef09fe136215cc6df60a35c7b81cbba8d9"}>
+                </img>
+
+                <div className="z-10 flex flex-col justify-between p-4 w-full">
                     <p className="text-base text-amber-400"> {Project.date}</p>
                     <h5 className="mb-2 text-xl hover-underline transition font-bold tracking-tight text-gray-900 dark:text-white">
                         {Project.title}
@@ -118,21 +123,24 @@ const Projects:Project[]=[
         date: "2021-10-10",
         content: "One easy-to-navigate dashboard to wrap tokens, send streams, and manage recurring crypto payments", 
         demoURL: "https://cashstreamcrypto.com/",
-        sourceURL: "https://github.com/thanvinhbaohoang/CashStream"
+        sourceURL: "https://github.com/thanvinhbaohoang/CashStream",
+        imageURL:"https://www.cos.io/hubfs/rpcb-social.jpg"
     },
     {
         title: "BlockStay", 
         date: "2023",
         content: "Hotel Door Lock IOT Based project that authenticate using CashStream", 
         sourceURL: "https://github.com/thanvinhbaohoang/BlockStay",
-        demoURL:"https://devpost.com/software/blockstay"
+        demoURL:"https://devpost.com/software/blockstay",
+        imageURL: "https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2021/10/how_to_create_a_project_timeline_-_article_image.jpg"
 
     },
    {
         title: "DartMart", 
         date: "2022",
         content: "A React Native mobile app for food delivery at Dartmouth College with DUO 2-FA Authentication", 
-        sourceURL: "https://github.com/thanvinhbaohoang/project-dartmart"
+        sourceURL: "https://github.com/thanvinhbaohoang/project-dartmart",
+        imageURL:"https://cdn.vox-cdn.com/thumbor/u1Y6bbbdT2J7wQIm9rTdDLwUYL8=/0x0:1920x1080/1200x800/filters:focal(807x387:1113x693)/cdn.vox-cdn.com/uploads/chorus_image/image/57539773/DarwinProject_1920x1080.0.jpg"
     },
     {
         title: "Spectre Wallet", 
