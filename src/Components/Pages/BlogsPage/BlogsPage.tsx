@@ -1,4 +1,4 @@
-import BlogCards from "../HomePage/BlogCards"
+// import BlogCards from "../HomePage/BlogCards"
 import SearchByTags from "../../SearchByTags"
 
 export default function BlogsPage() {

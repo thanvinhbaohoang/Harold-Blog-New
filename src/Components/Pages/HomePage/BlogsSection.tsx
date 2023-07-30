@@ -1,5 +1,5 @@
 // import SearchByTags from "../../SearchByTags";
-import BlogCards from "./BlogCards";
+// import BlogCards from "./BlogCards";
 import { Link } from "react-router-dom";
 
 export default function BlogsSection() {
