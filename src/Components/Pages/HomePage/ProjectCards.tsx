@@ -116,7 +116,6 @@ const Projects:Project[]=[
     {
         title: "CashStream", 
         date: "2021-10-10",
-        author: "Harold Than",
         content: "One easy-to-navigate dashboard to wrap tokens, send streams, and manage recurring crypto payments", 
         demoURL: "https://cashstreamcrypto.com/",
         sourceURL: "https://github.com/thanvinhbaohoang/CashStream"
@@ -124,7 +123,6 @@ const Projects:Project[]=[
     {
         title: "BlockStay", 
         date: "2023",
-        author: "Harold Than",
         content: "Hotel Door Lock IOT Based project that authenticate using CashStream", 
         sourceURL: "https://github.com/thanvinhbaohoang/BlockStay",
         demoURL:"https://devpost.com/software/blockstay"
@@ -133,66 +131,58 @@ const Projects:Project[]=[
    {
         title: "DartMart", 
         date: "2022",
-        author: "Harold Than",
         content: "A React Native mobile app for food delivery at Dartmouth College with DUO 2-FA Authentication", 
         sourceURL: "https://github.com/thanvinhbaohoang/project-dartmart"
     },
     {
         title: "Spectre Wallet", 
         date: "2022",
-        author: "Harold Than",
         content: "A Crypto Wallet Web-App and React-Native-App Designed and Implemented using Bitcore-lib", 
         sourceURL:"https://github.com/thanvinhbaohoang/spectre-wallet-web"
     },
     {
-        title: "Tiny Search Engine", 
-        date: "2021-10-10",
-        author: "Harold Than",
-        content: "Web Search Engine programmed in C with use of Crawler, Indexer and Querier", 
-    },
-    {
         title: "Is She Into You?", 
-        date: "2021-10-10",
-        author: "Harold Than",
+        date: "20212",
         content: "Pure CSS and HTML Card 'Game' Based On SimplyExplained's Youtube Video of the same name", 
         sourceURL:"https://github.com/thanvinhbaohoang/Is-She-Into-You-",
         demoURL:"https://is-she-into-you.onrender.com/"
     },{
-        title: "Sudoku Generator and Solver", 
-        date: "2021-10-10",
-        author: "Harold Than",
-        content: " A Sudoku Game Generator and Solver Program written in C", 
-    },{
         title: "Youtube Clone with Redux", 
-        date: "2021-10-10",
-        author: "Harold Than",
+        date: "2022",
         content: "Youtube Clone with Redux for state management.",
         demoURL:"https://sa5-youtubeclone-with-redux.onrender.com/" 
     },{
         title: "Ivy League Sentiments", 
-        date: "2021-10-10",
-        author: "Harold Than",
+        date: "2022",
         content: "Data Analysis through Web-Scraping Reddit and Twitter to get the general sentiments of each Ivy League College Online", 
-    },{
+    },
+    {
+        title: "Tiny Search Engine", 
+        date: "2021",
+        content: "Web Search Engine programmed in C with use of Crawler, Indexer and Querier", 
+    },
+    {
+        title: "Sudoku Generator and Solver", 
+        date: "2021-10-10",
+        content: " A Sudoku Game Generator and Solver Program written in C", 
+        
+    },
+    {
         title: "Boids Deep Sea Simulation", 
         date: "2022",
-        author: "Harold Than",
         content: "A Deep Sea VR Cage Diving Experience with Schools Of Fish behavior simulated with Boids Algorithm", 
     },{
         title: "Ad-VR-Tise", 
         date: "2022",
-        author: "Harold Than",
         content: " 3D Consensual Advertisement Model with Interactive UI for the mostly unexplored VR Metaverse ads space", 
     },{
         title: "GuitAR Hero", 
         date: "2022",
-        author: "Harold Than",
         content: "Learn to play real guitar through a Guitar Hero Game using Augmented Reality", 
     },
     {
         title: "Hidden Markov Tagger", 
         date: "2021",
-        author: "Harold Than",
         content: "An NLP Part-Of-Speech tagger that use State machine to categorize words ", 
     },
 ]
@@ -218,7 +208,7 @@ export default function ProjectCards(prop: {cardsNum: number }){
         return(
             <div className="grid z-10 grid-cols-1 lg:grid-cols-3 w-full gap-4">
                 {
-                    Projects.slice(0,prop.cardsNum).map((Project) => <ProjectCard Project={Project} />)
+                    Projects.slice(1,prop.cardsNum+1).map((Project) => <ProjectCard Project={Project} />)
                 }
             </div>
         )

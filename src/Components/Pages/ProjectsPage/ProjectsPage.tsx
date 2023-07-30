@@ -4,7 +4,6 @@ export interface Project {
     title: string;
     date: string;
     content: string;
-    author: string;
     featured?: boolean;
     imageURL?: string;
     demoURL?: string;
