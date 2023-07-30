@@ -16,7 +16,7 @@ export interface Project {
 export default function ProjectsPage() {
     return(
         <div className="flex flex-col  items-center ">
-            <ProjectCards cardsNum={10}/>
+            <ProjectCards cardsNum={20}/>
       </div>
 
     )

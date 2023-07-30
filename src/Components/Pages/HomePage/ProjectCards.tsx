@@ -59,7 +59,7 @@ function FeaturedProject({Project}:{Project:Project}) {
                     </div>
 
                     <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                        <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup"></img>
+                        <img  className= "group-hover:scale-[102%] transition  rounded-lg object-cover" src={Project.imageURL? Project.imageURL: ""} alt="mockup"></img>
                     </div>                
                 </div>
             </section>  )
@@ -124,7 +124,7 @@ const Projects:Project[]=[
         content: "One easy-to-navigate dashboard to wrap tokens, send streams, and manage recurring crypto payments", 
         demoURL: "https://cashstreamcrypto.com/",
         sourceURL: "https://github.com/thanvinhbaohoang/CashStream",
-        imageURL:"https://www.cos.io/hubfs/rpcb-social.jpg"
+        imageURL:"https://github.com/thanvinhbaohoang/images-for-portfolio/blob/main/cashstream_landing.png?raw=true"
     },
     {
         title: "BlockStay", 
@@ -151,17 +151,23 @@ const Projects:Project[]=[
     },
     {
         title: "Spooderman", 
-        date: "2022",
+        date: "2021",
         content: "A Unity Minigame where you swing around the city as Spooderman", 
         imageURL:"https://github.com/thanvinhbaohoang/images-for-portfolio/blob/main/spooderman.png?raw=true"
     },
     {
         title: "Is She Into You?", 
-        date: "20212",
+        date: "2021",
         content: "Pure CSS and HTML Card 'Game' Based On SimplyExplained's Youtube Video of the same name", 
         sourceURL:"https://github.com/thanvinhbaohoang/Is-She-Into-You-",
         demoURL:"https://is-she-into-you.onrender.com/",
         imageURL:"https://github.com/thanvinhbaohoang/images-for-portfolio/blob/main/IsSheIntoYou.png?raw=true"
+    },
+    {
+        title: "Boids Deep Sea Simulation", 
+        date: "2022",
+        content: "A Deep Sea VR Cage Diving Experience with Schools Of Fish behavior simulated with Boids Algorithm", 
+        imageURL:"https://github.com/thanvinhbaohoang/images-for-portfolio/blob/main/boid.png?raw=true"
     },{
         title: "Youtube Clone with Redux", 
         date: "2022",
@@ -184,11 +190,6 @@ const Projects:Project[]=[
         
     },
     {
-        title: "Boids Deep Sea Simulation", 
-        date: "2022",
-        content: "A Deep Sea VR Cage Diving Experience with Schools Of Fish behavior simulated with Boids Algorithm", 
-        imageURL:"https://github.com/thanvinhbaohoang/images-for-portfolio/blob/main/boid.png"
-    },{
         title: "Ad-VR-Tise", 
         date: "2022",
         content: " 3D Consensual Advertisement Model with Interactive UI for the mostly unexplored VR Metaverse ads space", 
