@@ -76,7 +76,7 @@ function ProjectCard({Project}:{Project:Project}){
                         shadow">
                 
                 <img className='rounded-t-lg w-full h-56 z-0   object-cover flex items-center justify-center'
-                    src={Project.imageURL? Project.imageURL : "https://img.freepik.com/free-vector/design-team-cartoon-landing-page-with-designers_107791-11253.jpg?w=2000&t=st=1690681676~exp=1690682276~hmac=20b53ed3a0f74a1c4cb32aca90323fef09fe136215cc6df60a35c7b81cbba8d9"}>
+                    src={Project.imageURL? Project.imageURL : "https://img.freepik.com/free-vector/thoughtful-woman-with-laptop-looking-big-question-mark_1150-39362.jpg?w=1480&t=st=1690682945~exp=1690683545~hmac=212e9901534545cffde1f929adc94a8bd38cc37857779d2a7270d4277d43866b"}>
                 </img>
 
                 <div className="z-10 flex flex-col justify-between p-4 w-full">
@@ -132,7 +132,7 @@ const Projects:Project[]=[
         content: "Hotel Door Lock IOT Based project that authenticate using CashStream", 
         sourceURL: "https://github.com/thanvinhbaohoang/BlockStay",
         demoURL:"https://devpost.com/software/blockstay",
-        imageURL: "https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2021/10/how_to_create_a_project_timeline_-_article_image.jpg"
+        imageURL: "https://user-images.githubusercontent.com/9410877/232322078-af4ff9d6-18fa-42c3-976a-d9673ba5c848.png"
 
     },
    {
@@ -140,20 +140,28 @@ const Projects:Project[]=[
         date: "2022",
         content: "A React Native mobile app for food delivery at Dartmouth College with DUO 2-FA Authentication", 
         sourceURL: "https://github.com/thanvinhbaohoang/project-dartmart",
-        imageURL:"https://cdn.vox-cdn.com/thumbor/u1Y6bbbdT2J7wQIm9rTdDLwUYL8=/0x0:1920x1080/1200x800/filters:focal(807x387:1113x693)/cdn.vox-cdn.com/uploads/chorus_image/image/57539773/DarwinProject_1920x1080.0.jpg"
+        imageURL:"https://github.com/thanvinhbaohoang/images-for-portfolio/blob/main/dartmart.png?raw=true"
     },
     {
         title: "Spectre Wallet", 
         date: "2022",
         content: "A Crypto Wallet Web-App and React-Native-App Designed and Implemented using Bitcore-lib", 
-        sourceURL:"https://github.com/thanvinhbaohoang/spectre-wallet-web"
+        sourceURL:"https://github.com/thanvinhbaohoang/spectre-wallet-web",
+        imageURL:"https://github.com/thanvinhbaohoang/spectre-wallet/raw/main/readme_imgs/send.png"
+    },
+    {
+        title: "Spooderman", 
+        date: "2022",
+        content: "A Unity Minigame where you swing around the city as Spooderman", 
+        imageURL:"https://github.com/thanvinhbaohoang/images-for-portfolio/blob/main/spooderman.png?raw=true"
     },
     {
         title: "Is She Into You?", 
         date: "20212",
         content: "Pure CSS and HTML Card 'Game' Based On SimplyExplained's Youtube Video of the same name", 
         sourceURL:"https://github.com/thanvinhbaohoang/Is-She-Into-You-",
-        demoURL:"https://is-she-into-you.onrender.com/"
+        demoURL:"https://is-she-into-you.onrender.com/",
+        imageURL:"https://github.com/thanvinhbaohoang/images-for-portfolio/blob/main/IsSheIntoYou.png?raw=true"
     },{
         title: "Youtube Clone with Redux", 
         date: "2022",
@@ -179,14 +187,17 @@ const Projects:Project[]=[
         title: "Boids Deep Sea Simulation", 
         date: "2022",
         content: "A Deep Sea VR Cage Diving Experience with Schools Of Fish behavior simulated with Boids Algorithm", 
+        imageURL:"https://github.com/thanvinhbaohoang/images-for-portfolio/blob/main/boid.png"
     },{
         title: "Ad-VR-Tise", 
         date: "2022",
         content: " 3D Consensual Advertisement Model with Interactive UI for the mostly unexplored VR Metaverse ads space", 
+        imageURL:"https://github.com/thanvinhbaohoang/images-for-portfolio/blob/main/advrtise.png?raw=true"
     },{
         title: "GuitAR Hero", 
         date: "2022",
         content: "Learn to play real guitar through a Guitar Hero Game using Augmented Reality", 
+        imageURL:"https://github.com/thanvinhbaohoang/images-for-portfolio/blob/main/guitar-hero.png?raw=true"
     },
     {
         title: "Hidden Markov Tagger", 

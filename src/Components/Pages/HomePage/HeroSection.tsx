@@ -1,6 +1,6 @@
 
 import { FaInstagram, FaGithub, FaLinkedinIn} from 'react-icons/fa';
-import {BsPersonFill, BsLightningFill} from 'react-icons/bs'
+import {BsLightningFill} from 'react-icons/bs'
 
 export default function HeroSection() {
     return(
